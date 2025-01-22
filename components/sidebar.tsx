@@ -9,7 +9,7 @@ export function Sidebar({ className }: { className?: string }) {
 
   return (
     <div
-      className={`pb-12 fixed top-0 left-0 h-full w-64 bg-background z-10 ${className}`}
+      className={`hidden fixed lg:w-64 lg:block `}
     >
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
