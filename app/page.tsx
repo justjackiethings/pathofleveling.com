@@ -181,7 +181,102 @@ export default function Home() {
       <div>Leave the Caravan and talk to the Hooded one</div>,
       <div>Go back to the Caravan and talk to Asala to go to Act 3</div>,
     ],
-    "3": [],
+    "3": [
+      "In Sandswept Marsh",
+      <div>Find the exit to the Ziggurat Encampment (town).</div>,
+      "In Town",
+      <div>Talk to everyone and exit into Jungle Ruins</div>,
+      "In Jungle Ruins",
+      <div>Find the Exit to venom crypts (near waypoint)</div>,
+      <div>Find and kill the mighty silverfist</div>,
+      <div>Find and go through the exit to Infested Barrens</div>,
+      "In Infested Barrens",
+      <div>
+        Find the exit to Chimeral Wetlands. Enter zone, take waypoint, backtrack
+        to Infested Barrens.
+      </div>,
+      <div>
+        Find the exit to Azak Bog. Enter zone, take waypoint, backtrack to
+        Infested Barrens.
+      </div>,
+      <div>Find the exit to the Matlan Waterways and the waypoint.</div>,
+      <div>
+        Zone Note: Whichever waypoint you find last, use it to travel back to
+        Jungle Ruins.
+      </div>,
+      "In Jungle Ruins",
+      <div>Enter the Venom Crypts</div>,
+      "In Venom Crypts",
+      <div>Find the corpse for the venom phial, then go back to town</div>,
+      "In Town",
+      <div>
+        Go back to town, turn in phial at Servi for a reward. This can not be
+        changed later.
+      </div>,
+      <div>Go to the Azak Bog.</div>,
+      "In Azak Bog",
+      <div className="flex flex-row gap-2">
+        <div className="italic">#Optional</div>Find the Flameskin ritual and
+        activate all, it gives 25% fire res and rarity for the rest of the zone
+      </div>,
+      <div>Find and kill Ignagduk. Rewards 30 spirit.</div>,
+      <div>Go back to town and then to The Chimeral Wetlands</div>,
+      "In The Chimeral Wetlands",
+      <div>Find the temple/trial of chaos. </div>,
+      <div>Find and kill the chimeara boss</div>,
+      <div>Enter Juquani's Machinarium</div>,
+      "In Jiquani's Machinarium",
+      <div>Find the first small soul core, then open the door</div>,
+      <div>Find two more small soul cores</div>,
+      <div>Find the exit towards Jiquani's sanctum</div>,
+      <div>Find and kill Blackjaw. Rewards 10% fire res.</div>,
+      <div>Checkpoint port to the exit, then go to Jiquani's Sanctum</div>,
+      "In Jiquani's Sanctum",
+      <div>Don't forget the activate the waypoint right after the entry.</div>,
+      <div>Talk to Alva</div>,
+      <div>Find two medium soul cores</div>,
+      <div>"Activate both generators. Place down a portal BEFORE you activate the second generator."</div>,
+      <div>Portal back to town and waypoint back to the Jiquani's Sanctum.</div>,
+      <div>Kill Zicoatl, Warden of the core and loot the large soul core</div>,
+      <div>Go back to the infested barrens waypoint</div>,
+      "In Infested Barrens",
+      <div>Insert the large soul core and go to Matlan Waterways afterwards</div>,
+      "In Matlan Waterways",
+      <div>Activate every single lever to navigate through the zone, then activate the big one at the end</div>,
+      <div>Tp back to town</div>,
+      "In Town",
+      <div>Go down the stairs near the well / the hooded one</div>,
+      <div>Talk to Alva, enter The Drowned City</div>,
+      "In The Drowned City",
+      <div>If it's your first character of the league; Find the exit to The Molten Vault. Enter zone, take waypoint, backtrack to The Drowned City.</div>,
+      <div>Find the exit to The Apex of Filth. Enter zone, take waypoint, and if it's your first character of the league; backtrack to The Drowned City.</div>,
+      <div>If it's your first character of the league; Enter the Molten Vault. Otherwise enter The Apex of Filth.</div>,
+      "In The Molten Vault",
+      <div>Find and kill the boss, then talk to Oswald back in town</div>,
+      <div>Enter The Apex of Filth</div>,
+      "In The Apex of Filth",
+      <div>Find and kill the queen of filth, then portal back to town</div>,
+      "In Town",
+      <div>Go down the stairs near the well / the hooded one again, and enter The Temple of Kopec</div>,
+      "In The Temple of Kopec",
+      <div>Go up the stairs twice, then kill Ketzuli, High Priest of The Sun</div>,
+      "In Town",
+      <div>Talk to Alva and ride the elevator up</div>,
+      <div>Go through the gateway, then down the stairs again to enter Utzaal</div>,
+      "In Utzaal",
+      <div>Search and kill Viper Napuatzi.</div>,
+      <div>Find the exit to Aggorat and enter Aggorat.</div>,
+      "In Aggorat",
+      <div>Follow the voices of the trial of Atziri, go through to find the next checkpoint</div>,
+      <div>Find the exit towards the Black Chambers</div>,
+      <div>Find the Sacrificial table</div>,
+      <div>Farm The Sacrificial Heart if you haven't found it yet.</div>,
+      <div>Use the checkpoint to go the sacrificial table, loot the dagger, place the heart, stab the heart</div>,
+      <div>Use the checkpoint to go to The Black Chambers, enter The Black Chambers</div>,
+      "In The Black Chambers",
+      <div>Find and defeat Doryiani, Royal Thaumaturge</div>,
+      <div>Port back to town, walk through the gateway to enter Act 1 Cruel</div>,
+    ],
     "1 Cruel": [
       "In Town",
       <div>Kill the boss then enter town</div>,
@@ -336,7 +431,97 @@ export default function Home() {
       <div>Leave the Caravan and talk to the Hooded one</div>,
       <div>Go back to the Caravan and talk to Asala to go to Act 3</div>,
     ],
-    "3 Cruel": [],
+    "3 Cruel": [
+      "In Sandswept Marsh",
+      <div>Find the exit to the Ziggurat Encampment (town).</div>,
+      "In Town",
+      <div>Talk to everyone and exit into Jungle Ruins</div>,
+      "In Jungle Ruins",
+      <div>Find the Exit to venom crypts (near waypoint)</div>,
+      <div>Find and kill the mighty silverfist</div>,
+      <div>Find and go through the exit to Infested Barrens</div>,
+      "In Infested Barrens",
+      <div>
+        Find the exit to Chimeral Wetlands. Enter zone, take waypoint, backtrack
+        to Infested Barrens.
+      </div>,
+      <div>
+        Find the exit to Azak Bog. Enter zone, take waypoint, backtrack to
+        Infested Barrens.
+      </div>,
+      <div>Find the exit to the Matlan Waterways and the waypoint.</div>,
+      <div>
+        Zone Note: Whichever waypoint you find last, use it to travel back to
+        Jungle Ruins.
+      </div>,
+      "In Jungle Ruins",
+      <div>Enter the Venom Crypts</div>,
+      "In Venom Crypts",
+      <div>Find the corpse for the venom phial, then go back to town</div>,
+      "In Town",
+      <div>
+        Go back to town, turn in phial at Servi for a reward. This can not be
+        changed later.
+      </div>,
+      <div>Go to the Azak Bog.</div>,
+      "In Azak Bog",
+      <div className="flex flex-row gap-2">
+        <div className="italic">#Optional</div>Find the Flameskin ritual and
+        activate all, it gives 25% fire res and rarity for the rest of the zone
+      </div>,
+      <div>Find and kill Ignagduk. Rewards 30 spirit.</div>,
+      <div>Go back to town and then to The Chimeral Wetlands</div>,
+      "In The Chimeral Wetlands",
+      <div>Find and kill the chimeara boss</div>,
+      <div>Enter Juquani's Machinarium</div>,
+      "In Jiquani's Machinarium",
+      <div>Find the first small soul core, then open the door</div>,
+      <div>Find two more small soul cores</div>,
+      <div>Find the exit towards Jiquani's sanctum</div>,
+      <div>Find and kill Blackjaw. Rewards 10% fire res.</div>,
+      <div>Checkpoint port to the exit, then go to Jiquani's Sanctum</div>,
+      "In Jiquani's Sanctum",
+      <div>Don't forget the activate the waypoint right after the entry.</div>,
+      <div>Talk to Alva</div>,
+      <div>Find two medium soul cores</div>,
+      <div>"Activate both generators. Place down a portal BEFORE you activate the second generator."</div>,
+      <div>Portal back to town and waypoint back to the Jiquani's Sanctum.</div>,
+      <div>Kill Zicoatl, Warden of the core and loot the large soul core</div>,
+      <div>Go back to the infested barrens waypoint</div>,
+      "In Infested Barrens",
+      <div>Insert the large soul core and go to Matlan Waterways afterwards</div>,
+      "In Matlan Waterways",
+      <div>Activate every single lever to navigate through the zone, then activate the big one at the end</div>,
+      <div>Tp back to town</div>,
+      "In Town",
+      <div>Go down the stairs near the well / the hooded one</div>,
+      <div>Talk to Alva, enter The Drowned City</div>,
+      "In The Drowned City",
+      <div>Find the exit to The Apex of Filth. Enter zone, take waypoint, and if it's your first character of the league; backtrack to The Drowned City.</div>,
+      <div>Enter The Apex of Filth.</div>,
+      "In The Apex of Filth",
+      <div>Find and kill the queen of filth, then portal back to town</div>,
+      "In Town",
+      <div>Go down the stairs near the well / the hooded one again, and enter The Temple of Kopec</div>,
+      "In The Temple of Kopec",
+      <div>Go up the stairs twice, then kill Ketzuli, High Priest of The Sun</div>,
+      "In Town",
+      <div>Talk to Alva and ride the elevator up</div>,
+      <div>Go through the gateway, then down the stairs again to enter Utzaal</div>,
+      "In Utzaal",
+      <div>Search and kill Viper Napuatzi.</div>,
+      <div>Find the exit to Aggorat and enter Aggorat.</div>,
+      "In Aggorat",
+      <div>Follow the voices of the trial of Atziri, go through to find the next checkpoint</div>,
+      <div>Find the exit towards the Black Chambers</div>,
+      <div>Find the Sacrificial table</div>,
+      <div>Farm The Sacrificial Heart if you haven't found it yet.</div>,
+      <div>Use the checkpoint to go the sacrificial table, loot the dagger, place the heart, stab the heart</div>,
+      <div>Use the checkpoint to go to The Black Chambers, enter The Black Chambers</div>,
+      "In The Black Chambers",
+      <div>Find and defeat Doryiani, Royal Thaumaturge</div>,
+      <div>Port back to town, talk to Doryiana to finish the campaign!</div>,
+    ],
   };
 
   const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
@@ -380,7 +565,7 @@ export default function Home() {
                   <h2 className="text-2xl font-bold tracking-tight text-primary pb-4">
                     --== ACT {act} ==--
                   </h2>
-                  <div className="text-muted-foreground" key={i}>
+                  <div className="text-muted-foreground pb-12" key={i}>
                     {steps.map((step, stepI) => (
                       <div
                         className="flex flex-row gap-2"
