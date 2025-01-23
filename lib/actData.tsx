@@ -2,8 +2,9 @@ import { ReactElement } from "react";
 
 export const acts: Record<string, Array<ReactElement | string>> = {
   "1": [
-    "In Town",
+    "The Riverbank",
     <div>Kill the boss then enter town</div>,
+    "In Town",
     <div>Hand in quests and head out to Clearfell</div>,
     "In Clearfell",
     <div>
@@ -38,25 +39,25 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     "In Hunting Grounds",
     <div>Find and kill Crowbell. Rewards two skill points.</div>,
     <div>
-      Find and enter Ogham Farmlands, find the waypoint and head back to the
-      hunting grounds.
+      Find and enter Ogham Farmlands.
     </div>,
+    "In Ogham Farmlands",
     <div>
-      Find and enter Freythorn, find the waypoint and head back to the hunting
-      grounds.
+      Find Una's lute. Usually around the center of the zone. Rewards 2 skill
+      points.
+    </div>,
+    <div>Find and kill Vargir The Feral Mutt in the Crop Circle. Drops a level 4 skill gem.</div>,
+    <div>Find and take the exit to Ogham Village and WP back to the Hunting Grounds.</div>,
+    "In Hunting Grounds",
+    <div>
+      Find and enter Freythorn.
     </div>,
     "In Freythorn",
     <div>
       Do all 4 rituals, killing The King of The Mists at the end. Rewards 30
       spirit.
     </div>,
-    <div>TP back to town and waypoint to Ogham Farmlands.</div>,
-    "In Ogham Farmlands",
-    <div>
-      Find Una's lute. Usually around the center of the zone. Rewards 2 skill
-      points.
-    </div>,
-    <div>Find and take the exit to Ogham Village.</div>,
+    <div>TP back to town and waypoint to Ogham Village.</div>,
     "In Ogham Village",
     <div>
       If it's your first character of the league; Find Smithing Tools.
