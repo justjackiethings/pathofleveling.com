@@ -27,7 +27,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     </div>,
     "In Grim Tangle",
     <div>
-      Find theexit to the Cemetery of The Eternals. The Druid boss can be
+      Find the exit to the Cemetery of The Eternals. The Druid boss can be
       skipped.
     </div>,
     "In Cemetary of The Eternals",
