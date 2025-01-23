@@ -19,16 +19,20 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Grelwood.
     </div>,
     <div>
-      Find the exit to Red Vale, take the waypoint, and go back to Grelwood.
+      Find the exit to Red Vale and go through.
     </div>,
     "In Red Vale",
     <div>Find the three obelisks and get the three quest items.</div>,
+    <div>After getting the third, WP to town and talk to Renly to acquire the Runed Spikes. WP to Grelwood.</div>,
+    "In Grelwood",
+    <div>Summon and talk to Una.</div>,
+    <div>Stab the tree with your runed spikes then talk to Una.</div>,
     <div>
-      Go back to town, talk to NPCs, then head to Grim Tangle via waypoint.
+      Go back to town, talk to NPCs, then head to Grim Tangle via waypoint to Grelwood.
     </div>,
     "In Grim Tangle",
     <div>
-      Find theexit to the Cemetery of The Eternals. The Druid boss can be
+      Find the exit to the Cemetery of The Eternals. The Druid boss can be
       skipped.
     </div>,
     "In Cemetary of The Eternals",
@@ -149,9 +153,9 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Find and kill the boss, then go back to town</div>,
     "In Town",
     <div>Talk to Zarka, then Asala</div>,
-    <div>Use the desert map to traval to the halani gates</div>,
+    <div>Use the desert map to travel to the halani gates</div>,
     <div>Go to the front of the caravan and sound the horn</div>,
-    <div>Use the desert map to traval to Deshar</div>,
+    <div>Use the desert map to travel to Deshar</div>,
     "In Deshar",
     <div>
       Find the final letter on a corpse on the ground. Rewards two skill
@@ -291,16 +295,20 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Grelwood.
     </div>,
     <div>
-      Find the exit to Red Vale, take the waypoint, and go back to Grelwood.
+      Find the exit to Red Vale and go through.
     </div>,
     "In Red Vale",
     <div>Find the three obelisks and get the three quest items.</div>,
+    <div>After getting the third, WP to town and talk to Renly to acquire the Runed Spikes. WP to Grelwood.</div>,
+    "In Grelwood",
+    <div>Summon and talk to Una.</div>,
+    <div>Stab the tree with your runed spikes then talk to Una.</div>,
     <div>
-      Go back to town, talk to NPCs, then head to Grim Tangle via waypoint.
+      Go back to town, talk to NPCs, then head to Grim Tangle via waypoint to Grelwood.
     </div>,
     "In Grim Tangle",
     <div>
-      Find theexit to the Cemetery of The Eternals. The Druid boss can be
+      Find the exit to the Cemetery of The Eternals. The Druid boss can be
       skipped.
     </div>,
     "In Cemetary of The Eternals",
@@ -346,17 +354,17 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Find and kill Rudja</div>,
     <div>Talk to Risu then portal back to town</div>,
     "In Town",
-    <div>Talk to Risu, then use desert map to go to halani gates</div>,
+    <div>Talk to Risu, then use desert map to go to Halani Gates</div>,
     <div>
       Talk to Asala at the gates, go back to the caravan, talk to Risu again,
       then to Asala again
     </div>,
-    <div>Use desert map to go to halani gates again</div>,
+    <div>Use desert map to go to Halani Gates again</div>,
     "In Traitor's Passage",
-    <div>Find the exit to the halani gates</div>,
+    <div>Find the exit to the Halani Gates</div>,
     "In The Halani Gates",
     <div>
-      Find and kill Jamanra the risen king. Stay close to the canyon. Cross
+      Find and kill Jamanra The Risen King. Stay close to the canyon. Cross
       the canyon 3 times to find the boss.
     </div>,
     <div>
@@ -399,9 +407,9 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Find and kill the boss, then go back to town</div>,
     "In Town",
     <div>Talk to Zarka, then Asala</div>,
-    <div>Use the desert map to traval to the halani gates</div>,
+    <div>Use the desert map to travel to the halani gates</div>,
     <div>Go to the front of the caravan and sound the horn</div>,
-    <div>Use the desert map to traval to Deshar</div>,
+    <div>Use the desert map to travel to Deshar</div>,
     "In Deshar",
     <div>
       Find the final letter on a corpse on the ground. Rewards two skill
