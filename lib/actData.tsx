@@ -11,15 +11,15 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Kill Beira of the Rotten Pack. She's North/North East of the waypoint.
       Rewards 10% Cold Res.
     </div>,
-    <div>Find the exit to Grelwood.</div>,
+    <div>Find the entrance to Grelwood.</div>,
     "In Grelwood",
     <div>Find the waypoint and talk to the quest NPC. Usually central.</div>,
     <div>
-      Find the exit to Grim Tangle, take the waypoint, and go back to
+      Find the entrance to Grim Tangle, take the waypoint, and go back to
       Grelwood.
     </div>,
     <div>
-      Find the exit to Red Vale and go through.
+      Find the entrance to Red Vale and go through.
     </div>,
     "In Red Vale",
     <div>Find the three obelisks and get the three quest items.</div>,
@@ -32,13 +32,13 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     </div>,
     "In Grim Tangle",
     <div>
-      Find the exit to the Cemetery of The Eternals. The Druid boss can be
+      Find the entrance to the Cemetery of The Eternals. The Druid boss can be
       skipped.
     </div>,
     "In Cemetary of The Eternals",
     <div>Find the Mausoleum and kill the boss in there.</div>,
     <div>Find the Tomb and kill the boss in there.</div>,
-    <div>Talk to Lachlan, open the gate, and kill him. ☹</div>,
+    <div>Talk to Lachlann, open the gate, and kill him. ☹</div>,
     <div>Enter Hunting Grounds</div>,
     "In Hunting Grounds",
     <div>Find and kill Crowbell. Rewards two skill points.</div>,
@@ -51,7 +51,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       points.
     </div>,
     <div>Find and kill Vargir The Feral Mutt in the Crop Circle. Drops a level 4 skill gem.</div>,
-    <div>Find and take the exit to Ogham Village and WP back to the Hunting Grounds.</div>,
+    <div>Find and take the entrance to Ogham Village and WP back to the Hunting Grounds.</div>,
     "In Hunting Grounds",
     <div>
       Find and enter Freythorn.
@@ -70,11 +70,11 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Go to The Manor Ramparts</div>,
     "In The Manor Ramparts",
     <div>
-      Find the exit to Ogham Manor. This is always in the opposite direction
+      Find the entrance to to Ogham Manor. This is always in the opposite direction
       of the waypoint after you zone in.
     </div>,
     "In Ogham Manor",
-    <div>Find and kill candlemass</div>,
+    <div>Find and kill Candlemass</div>,
     <div>Find and go down stairs twice</div>,
     <div>Find elevator to boss, kill boss, go back to town</div>,
     "In Town",
@@ -93,7 +93,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Speak to everyone then use the desert map to go to Mawdun Quarry
     </div>,
     "In Mawdun Quarry",
-    <div>Find and take the exit to Mawdun Mine</div>,
+    <div>Find and take the entrance to Mawdun Mine</div>,
     "In Mawdun Mine",
     <div>Find and kill Rudja</div>,
     <div>Talk to Risu then portal back to town</div>,
@@ -106,10 +106,10 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Use desert map to go to halani gates again</div>,
     "In Traitor's Passage",
     <div>Find and kill Basala, pick up the Djinn Barya quest item</div>,
-    <div>Find the exit to the halani gates</div>,
+    <div>Find the entrance to the Halani Gates</div>,
     "In The Halani Gates",
     <div>
-      Find and kill Jamanra the risen king. Stay close to the canyon. Cross
+      Find and kill Jamanra The Risen King. Stay close to the canyon. Cross
       the canyon 3 times to find the boss.
     </div>,
     <div>
@@ -122,11 +122,11 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     "In Keth",
     <div>Kill Kabala, the constrictor queen. Rewards 2 skill points.</div>,
     <div>Kill snakes until you find the Kabala Clan relic.</div>,
-    <div>Find exit to the lost city</div>,
+    <div>Find entrance to The Lost City</div>,
     <div>Go to The Lost City.</div>,
     "In The Lost City",
-    <div>Find exit and go to the buried shrines, then the heart of keth</div>,
-    <div>Kill Azaraian the Forsaken Son</div>,
+    <div>Find Entrance and go to the buried shrines, then the Heart of Keth</div>,
+    <div>Kill Azaraian The Forsaken Son</div>,
     <div>
       Talk to the goddess, loot the cinders, burn the goddess, loot the
       essence of water.
@@ -135,7 +135,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     "In Town",
     <div>Use desert map to go to Mastodon Badlands</div>,
     "In Mastodon Badlands",
-    <div>Find the exit to The Bone Pits</div>,
+    <div>Find the Entrance to The Bone Pits</div>,
     "In The Bone Pits",
     <div>Find and kill the zone boss and loot the horn</div>,
     <div>Kill Hyenas until you found the sun clan relic</div>,
@@ -148,7 +148,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Find the medallion and place the two relics in there. Rewards a
       permanent buff.
     </div>,
-    <div>Find and take the exit to Titan Grotto</div>,
+    <div>Find and take the entrance to Titan Grotto</div>,
     "In Titan Grotto",
     <div>Find and kill the boss, then go back to town</div>,
     "In Town",
@@ -161,10 +161,10 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Find the final letter on a corpse on the ground. Rewards two skill
       points on hand in.
     </div>,
-    <div>Find the exit to the path of mourning</div>,
+    <div>Find the entrance to the path of mourning</div>,
     <div>Go the The Path of Mourning</div>,
     "In The Path of Mourning",
-    <div>Find the exit to the Spires of Deshar</div>,
+    <div>Find the entrance to the Spires of Deshar</div>,
     "In Spires of Deshar",
     <div>Find the sisters of Garukhan</div>,
     <div>Find and kill Tor Gul, The Defiler</div>,
@@ -174,7 +174,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Talk to everyone, then use desert map to go to the dreadnought</div>,
     "In The Dreadnought",
     <div>
-      Find the exit to the dreadnought vanguard, then find and kill Jamara,
+      Find the entrance to the dreadnought vanguard, then find and kill Jamara,
       The Abomination
     </div>,
     <div>Portal back to town</div>,
@@ -184,23 +184,23 @@ export const acts: Record<string, Array<ReactElement | string>> = {
   ],
   "3": [
     "In Sandswept Marsh",
-    <div>Find the exit to the Ziggurat Encampment (town).</div>,
+    <div>Find the entrance to the Ziggurat Encampment (town).</div>,
     "In Town",
-    <div>Talk to everyone and exit into Jungle Ruins</div>,
+    <div>Talk to everyone and entrance into Jungle Ruins</div>,
     "In Jungle Ruins",
-    <div>Find the Exit to venom crypts (near waypoint)</div>,
-    <div>Find and kill the mighty silverfist</div>,
-    <div>Find and go through the exit to Infested Barrens</div>,
+    <div>Find the entrance to venom crypts (near waypoint)</div>,
+    <div>Find and kill The Mighty Silverfist</div>,
+    <div>Find and go through the entrance to Infested Barrens</div>,
     "In Infested Barrens",
     <div>
-      Find the exit to Chimeral Wetlands. Enter zone, take waypoint, backtrack
+      Find the entrance to Chimeral Wetlands. Enter zone, take waypoint, backtrack
       to Infested Barrens.
     </div>,
     <div>
-      Find the exit to Azak Bog. Enter zone, take waypoint, backtrack to
+      Find the entrance to Azak Bog. Enter zone, take waypoint, backtrack to
       Infested Barrens.
     </div>,
-    <div>Find the exit to the Matlan Waterways and the waypoint.</div>,
+    <div>Find the entrance to the Matlan Waterways and the waypoint.</div>,
     <div>
       Zone Note: Whichever waypoint you find last, use it to travel back to
       Jungle Ruins.
@@ -229,16 +229,16 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     "In Jiquani's Machinarium",
     <div>Find the first small soul core, then open the door</div>,
     <div>Find two more small soul cores</div>,
-    <div>Find the exit towards Jiquani's sanctum</div>,
+    <div>Find the entrance towards Jiquani's sanctum</div>,
     <div>Find and kill Blackjaw. Rewards 10% fire res.</div>,
-    <div>Checkpoint port to the exit, then go to Jiquani's Sanctum</div>,
+    <div>Checkpoint port to the entrance, then go to Jiquani's Sanctum</div>,
     "In Jiquani's Sanctum",
     <div>Don't forget the activate the waypoint right after the entry.</div>,
     <div>Talk to Alva</div>,
     <div>Find two medium soul cores</div>,
     <div>"Activate both generators. Place down a portal BEFORE you activate the second generator."</div>,
     <div>Portal back to town and waypoint back to the Jiquani's Sanctum.</div>,
-    <div>Kill Zicoatl, Warden of the core and loot the large soul core</div>,
+    <div>Kill Zicoatl, Warden of The Core and loot the large soul core</div>,
     <div>Go back to the infested barrens waypoint</div>,
     "In Infested Barrens",
     <div>Insert the large soul core and go to Matlan Waterways afterwards</div>,
@@ -249,14 +249,14 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Go down the stairs near the well / the hooded one</div>,
     <div>Talk to Alva, enter The Drowned City</div>,
     "In The Drowned City",
-    <div>If it's your first character of the league; Find the exit to The Molten Vault. Enter zone, take waypoint, backtrack to The Drowned City.</div>,
-    <div>Find the exit to The Apex of Filth. Enter zone, take waypoint, and if it's your first character of the league; backtrack to The Drowned City.</div>,
+    <div>If it's your first character of the league; Find the entrance to The Molten Vault. Enter zone, take waypoint, backtrack to The Drowned City.</div>,
+    <div>Find the entrance to The Apex of Filth. Enter zone, take waypoint, and if it's your first character of the league; backtrack to The Drowned City.</div>,
     <div>If it's your first character of the league; Enter the Molten Vault. Otherwise enter The Apex of Filth.</div>,
     "In The Molten Vault",
     <div>Find and kill the boss, then talk to Oswald back in town</div>,
     <div>Enter The Apex of Filth</div>,
     "In The Apex of Filth",
-    <div>Find and kill the queen of filth, then portal back to town</div>,
+    <div>Find and kill The Queen of Filth, then portal back to town</div>,
     "In Town",
     <div>Go down the stairs near the well / the hooded one again, and enter The Temple of Kopec</div>,
     "In The Temple of Kopec",
@@ -266,10 +266,10 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Go through the gateway, then down the stairs again to enter Utzaal</div>,
     "In Utzaal",
     <div>Search and kill Viper Napuatzi.</div>,
-    <div>Find the exit to Aggorat and enter Aggorat.</div>,
+    <div>Find the entrance to Aggorat and enter Aggorat.</div>,
     "In Aggorat",
     <div>Follow the voices of the trial of Atziri, go through to find the next checkpoint</div>,
-    <div>Find the exit towards the Black Chambers</div>,
+    <div>Find the entrance towards the Black Chambers</div>,
     <div>Find the Sacrificial table</div>,
     <div>Farm The Sacrificial Heart if you haven't found it yet.</div>,
     <div>Use the checkpoint to go the sacrificial table, loot the dagger, place the heart, stab the heart</div>,
@@ -287,15 +287,15 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Kill Beira of the Rotten Pack. She's North/North East of the waypoint.
       Rewards 10% Cold Res.
     </div>,
-    <div>Find the exit to Grelwood.</div>,
+    <div>Find the entrance to Grelwood.</div>,
     "In Grelwood",
     <div>Find the waypoint and talk to the quest NPC. Usually central.</div>,
     <div>
-      Find the exit to Grim Tangle, take the waypoint, and go back to
+      Find the entrance to Grim Tangle, take the waypoint, and go back to
       Grelwood.
     </div>,
     <div>
-      Find the exit to Red Vale and go through.
+      Find the entrance to Red Vale and go through.
     </div>,
     "In Red Vale",
     <div>Find the three obelisks and get the three quest items.</div>,
@@ -308,7 +308,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     </div>,
     "In Grim Tangle",
     <div>
-      Find the exit to the Cemetery of The Eternals. The Druid boss can be
+      Find the entrance to the Cemetery of The Eternals. The Druid boss can be
       skipped.
     </div>,
     "In Cemetary of The Eternals",
@@ -324,13 +324,13 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Find Una's lute. Usually around the center of the zone. Rewards 2 skill
       points.
     </div>,
-    <div>Find and take the exit to Ogham Village.</div>,
+    <div>Find and take the entrance to Ogham Village.</div>,
     "In Ogham Village",
     <div>Find and kill The Executioner</div>,
     <div>Go to The Manor Ramparts</div>,
     "In The Manor Ramparts",
     <div>
-      Find the exit to Ogham Manor. This is always in the opposite direction
+      Find the entrance to Ogham Manor. This is always in the opposite direction
       of the waypoint after you zone in.
     </div>,
     "In Ogham Manor",
@@ -349,7 +349,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Speak to everyone then use the desert map to go to Mawdun Quarry
     </div>,
     "In Mawdun Quarry",
-    <div>Find and take the exit to Mawdun Mine</div>,
+    <div>Find and take the entrance to Mawdun Mine</div>,
     "In Mawdun Mine",
     <div>Find and kill Rudja</div>,
     <div>Talk to Risu then portal back to town</div>,
@@ -361,7 +361,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     </div>,
     <div>Use desert map to go to Halani Gates again</div>,
     "In Traitor's Passage",
-    <div>Find the exit to the Halani Gates</div>,
+    <div>Find the entrance to the Halani Gates</div>,
     "In The Halani Gates",
     <div>
       Find and kill Jamanra The Risen King. Stay close to the canyon. Cross
@@ -376,10 +376,10 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     "In Keth",
     <div>Kill Kabala, the constrictor queen. Rewards 2 skill points.</div>,
     <div>Kill snakes until you find the Kabala Clan relic.</div>,
-    <div>Find exit to the lost city</div>,
+    <div>Find entrance to the lost city</div>,
     <div>Go to The Lost City.</div>,
     "In The Lost City",
-    <div>Find exit and go to the buried shrines, then the heart of keth</div>,
+    <div>Find entrance and go to the buried shrines, then the heart of keth</div>,
     <div>Kill Azaraian the Forsaken Son</div>,
     <div>
       Talk to the goddess, loot the cinders, burn the goddess, loot the
@@ -389,7 +389,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     "In Town",
     <div>Use desert map to go to Mastodon Badlands</div>,
     "In Mastodon Badlands",
-    <div>Find the exit to The Bone Pits</div>,
+    <div>Find the entrance to The Bone Pits</div>,
     "In The Bone Pits",
     <div>Find and kill the zone boss and loot the horn</div>,
     <div>Kill Hyenas until you found the sun clan relic</div>,
@@ -402,7 +402,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Find the medallion and place the two relics in there. Rewards a
       permanent buff.
     </div>,
-    <div>Find and take the exit to Titan Grotto</div>,
+    <div>Find and take the entrance to Titan Grotto</div>,
     "In Titan Grotto",
     <div>Find and kill the boss, then go back to town</div>,
     "In Town",
@@ -415,10 +415,10 @@ export const acts: Record<string, Array<ReactElement | string>> = {
       Find the final letter on a corpse on the ground. Rewards two skill
       points on hand in.
     </div>,
-    <div>Find the exit to the path of mourning</div>,
+    <div>Find the entrance to the path of mourning</div>,
     <div>Go the The Path of Mourning</div>,
     "In The Path of Mourning",
-    <div>Find the exit to the Spires of Deshar</div>,
+    <div>Find the entrance to the Spires of Deshar</div>,
     "In Spires of Deshar",
     <div>Find the sisters of Garukhan</div>,
     <div>Find and kill Tor Gul, The Defiler</div>,
@@ -428,7 +428,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Talk to everyone, then use desert map to go to the dreadnought</div>,
     "In The Dreadnought",
     <div>
-      Find the exit to the dreadnought vanguard, then find and kill Jamara,
+      Find the entrance to the dreadnought vanguard, then find and kill Jamara,
       The Abomination
     </div>,
     <div>Portal back to town</div>,
@@ -438,23 +438,23 @@ export const acts: Record<string, Array<ReactElement | string>> = {
   ],
   "3 Cruel": [
     "In Sandswept Marsh",
-    <div>Find the exit to the Ziggurat Encampment (town).</div>,
+    <div>Find the entrance to the Ziggurat Encampment (town).</div>,
     "In Town",
-    <div>Talk to everyone and exit into Jungle Ruins</div>,
+    <div>Talk to everyone and entrance into Jungle Ruins</div>,
     "In Jungle Ruins",
-    <div>Find the Exit to venom crypts (near waypoint)</div>,
+    <div>Find the entrance to venom crypts (near waypoint)</div>,
     <div>Find and kill the mighty silverfist</div>,
-    <div>Find and go through the exit to Infested Barrens</div>,
+    <div>Find and go through the entrance to Infested Barrens</div>,
     "In Infested Barrens",
     <div>
-      Find the exit to Chimeral Wetlands. Enter zone, take waypoint, backtrack
+      Find the entrance to Chimeral Wetlands. Enter zone, take waypoint, backtrack
       to Infested Barrens.
     </div>,
     <div>
-      Find the exit to Azak Bog. Enter zone, take waypoint, backtrack to
+      Find the entrance to Azak Bog. Enter zone, take waypoint, backtrack to
       Infested Barrens.
     </div>,
-    <div>Find the exit to the Matlan Waterways and the waypoint.</div>,
+    <div>Find the entrance to the Matlan Waterways and the waypoint.</div>,
     <div>
       Zone Note: Whichever waypoint you find last, use it to travel back to
       Jungle Ruins.
@@ -482,9 +482,9 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     "In Jiquani's Machinarium",
     <div>Find the first small soul core, then open the door</div>,
     <div>Find two more small soul cores</div>,
-    <div>Find the exit towards Jiquani's sanctum</div>,
+    <div>Find the entrance towards Jiquani's sanctum</div>,
     <div>Find and kill Blackjaw. Rewards 10% fire res.</div>,
-    <div>Checkpoint port to the exit, then go to Jiquani's Sanctum</div>,
+    <div>Checkpoint port to the entrance, then go to Jiquani's Sanctum</div>,
     "In Jiquani's Sanctum",
     <div>Don't forget the activate the waypoint right after the entry.</div>,
     <div>Talk to Alva</div>,
@@ -502,7 +502,7 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Go down the stairs near the well / the hooded one</div>,
     <div>Talk to Alva, enter The Drowned City</div>,
     "In The Drowned City",
-    <div>Find the exit to The Apex of Filth. Enter zone, take waypoint, and if it's your first character of the league; backtrack to The Drowned City.</div>,
+    <div>Find the entrance to The Apex of Filth. Enter zone, take waypoint, and if it's your first character of the league; backtrack to The Drowned City.</div>,
     <div>Enter The Apex of Filth.</div>,
     "In The Apex of Filth",
     <div>Find and kill the queen of filth, then portal back to town</div>,
@@ -515,10 +515,10 @@ export const acts: Record<string, Array<ReactElement | string>> = {
     <div>Go through the gateway, then down the stairs again to enter Utzaal</div>,
     "In Utzaal",
     <div>Search and kill Viper Napuatzi.</div>,
-    <div>Find the exit to Aggorat and enter Aggorat.</div>,
+    <div>Find the entrance to Aggorat and enter Aggorat.</div>,
     "In Aggorat",
     <div>Follow the voices of the trial of Atziri, go through to find the next checkpoint</div>,
-    <div>Find the exit towards the Black Chambers</div>,
+    <div>Find the entrance towards the Black Chambers</div>,
     <div>Find the Sacrificial table</div>,
     <div>Farm The Sacrificial Heart if you haven't found it yet.</div>,
     <div>Use the checkpoint to go the sacrificial table, loot the dagger, place the heart, stab the heart</div>,
