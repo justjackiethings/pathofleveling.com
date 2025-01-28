@@ -2,24 +2,26 @@
 import { ReactElement } from "react";
 
 export function ActStepView(
-  step: string | ReactElement,
-  checkedItems: Record<string, boolean>,
-  checkedItemKey: string,
-  handleCheckboxChange: (checkedItemKey: string) => void
+  props: {
+    step: string | ReactElement;
+    checkedItems: Record<string, boolean>;
+    checkedItemKey: string;
+    handleCheckboxChange: (checkedItemKey: string) => void;
+  }
 ) {
   return (
-    <div className="flex flex-row gap-2" key={checkedItemKey}>
-      {typeof step === "string" ? (
+    <div className="flex flex-row gap-2" key={props.checkedItemKey}>
+      {typeof props.step === "string" ? (
         <></>
       ) : (
         <input
           type="checkbox"
-          checked={checkedItems[checkedItemKey] || false}
-          onChange={() => handleCheckboxChange(checkedItemKey)}
+          checked={props.checkedItems[props.checkedItemKey] || false}
+          onChange={() => props.handleCheckboxChange(props.checkedItemKey)}
         />
       )}
-      <div className={typeof step === "string" ? "text-xl p-2 pt-4" : ""}>
-        {step}
+      <div className={typeof props.step === "string" ? "text-xl p-2 pt-4" : ""}>
+        {props.step}
       </div>
     </div>
   );

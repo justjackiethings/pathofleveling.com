@@ -2,12 +2,7 @@
 import { acts } from "@/lib/actData";
 import { ActStepView } from "./ActStepView";
 
-export const ActProgressView = ({
-  checkedItems, handleCheckboxChange,
-}: {
-  checkedItems: Record<string, boolean>;
-  handleCheckboxChange: (checkedItemKey: string) => void;
-}) => (
+export const ActProgressView = (props : { checkedItems: Record<string, boolean>; handleCheckboxChange: (checkedItemKey: string) => void; }) => (
   <div className="space-y-12">
     {Object.entries(acts).map(([act, steps], i) => (
       <section key={act} id={`act${act}`} className="scroll-m-20">
@@ -16,11 +11,15 @@ export const ActProgressView = ({
         </h2>
         <div className="text-muted-foreground pb-12" key={i}>
           {steps.map((step, stepI) => (
-            ActStepView(step, checkedItems, `${act}-${stepI}`, handleCheckboxChange)
+            <ActStepView
+              step={step}
+              checkedItems={props.checkedItems}
+              checkedItemKey={`${act}-${stepI}`}
+              handleCheckboxChange={props.handleCheckboxChange}
+            />
           ))}
         </div>
       </section>
     ))}
   </div>
 );
-
