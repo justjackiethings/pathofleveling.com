@@ -1,28 +1,22 @@
 "use client";
 
 import { Sidebar } from "@/components/sidebar";
-import { acts } from "@/lib/actData";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { ActProgressView } from "./ActProgressView";
+import { useSetCheckedItems } from "./useSetCheckedItems";
+import { useUpdateStorageCheckedItems } from "./useUpdateStorageCheckedItems";
 
 export default function Home() {
-    const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
+  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>({});
 
-  useEffect(() => {
-    const savedCheckedItems = localStorage.getItem("checkedItems");
-    if (savedCheckedItems) {
-      setCheckedItems(JSON.parse(savedCheckedItems));
-    }
-  }, []);
+  useSetCheckedItems(setCheckedItems);
 
-  useEffect(() => {
-    localStorage.setItem("checkedItems", JSON.stringify(checkedItems));
-  }, [checkedItems]);
+  useUpdateStorageCheckedItems(checkedItems);
 
-  const handleCheckboxChange = (actKey: string, stepIndex: number) => {
-    const itemKey = `${actKey}-${stepIndex}`;
+  const handleCheckboxChange = (checkedItemKey: string) => {
     setCheckedItems((prev) => ({
       ...prev,
-      [itemKey]: !prev[itemKey],
+      [checkedItemKey]: !prev[checkedItemKey],
     }));
   };
 
@@ -40,40 +34,10 @@ export default function Home() {
             <p className="text-center text-muted-foreground pb-8">
               Leveling guide for Path of Exile 2 based on community knowledge
             </p>
-            <div className="space-y-12">
-              {Object.entries(acts).map(([act, steps], i) => (
-                <section key={act} id={`act${act}`} className="scroll-m-20">
-                  <h2 className="text-2xl font-bold tracking-tight text-primary pb-4">
-                    --== ACT {act} ==--
-                  </h2>
-                  <div className="text-muted-foreground pb-12" key={i}>
-                    {steps.map((step, stepI) => (
-                      <div
-                        className="flex flex-row gap-2"
-                        key={i * 1000 + stepI}
-                      >
-                        {typeof step === "string" ? (
-                          <></>
-                        ) : (
-                          <input
-                            type="checkbox"
-                            checked={checkedItems[`${act}-${stepI}`] || false}
-                            onChange={() => handleCheckboxChange(act, stepI)}
-                          />
-                        )}
-                        <div
-                          className={
-                            typeof step === "string" ? "text-xl p-2 pt-4" : ""
-                          }
-                        >
-                          {step}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              ))}
-            </div>
+            <ActProgressView
+              checkedItems={checkedItems}
+              handleCheckboxChange={handleCheckboxChange}
+            />
           </div>
         </div>
       </div>
