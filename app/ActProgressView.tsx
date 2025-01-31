@@ -9,9 +9,10 @@ export const ActProgressView = (props : { checkedItems: Record<string, boolean>;
         <h2 className="text-2xl font-bold tracking-tight text-primary pb-4">
           --== ACT {act} ==--
         </h2>
-        <div className="text-muted-foreground pb-12" key={i}>
+        <div className="text-muted-foreground pb-12" key={act + i}>
           {steps.map((step, stepI) => (
             <ActStepView
+              key={`${act}-${stepI}`}
               step={step}
               checkedItems={props.checkedItems}
               checkedItemKey={`${act}-${stepI}`}
