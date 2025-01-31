@@ -235,20 +235,38 @@ const locationOutLinks = [
 ];
 const replaceTextWithLinks = (input: string) => {
   // Sort locationOutLinks by descending text length to avoid partial matches
-  const sortedLinks = [...locationOutLinks].sort((a, b) => b.text.length - a.text.length);
+  const sortedLinks = [...locationOutLinks].sort(
+    (a, b) => b.text.length - a.text.length
+  );
 
   // Create a regex pattern to match all location names
-  const pattern = new RegExp(sortedLinks.map(link => `\\b${link.text}\\b`).join("|"), "g");
+  const pattern = new RegExp(
+    sortedLinks.map((link) => `\\b${link.text}\\b`).join("|"),
+    "g"
+  );
 
-  return input.split(pattern).reduce<React.ReactNode[]>((acc, part, index, arr) => {
-    acc.push(part);
-    if (index < arr.length - 1) {
-      const match = input.match(pattern)?.[index];
-      const link = sortedLinks.find(link => link.text === match);
-      if (link) acc.push(<a key={index} href={link.href} target="_blank" rel="noopener noreferrer">{link.text}</a>);
-    }
-    return acc;
-  }, []);
+  return input
+    .split(pattern)
+    .reduce<React.ReactNode[]>((acc, part, index, arr) => {
+      acc.push(part);
+      if (index < arr.length - 1) {
+        const match = input.match(pattern)?.[index];
+        const link = sortedLinks.find((link) => link.text === match);
+        if (link)
+          acc.push(
+            <a
+              className="text-secondary-foreground"
+              key={index}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.text}
+            </a>
+          );
+      }
+      return acc;
+    }, []);
 };
 
 export const HighlightedText = ({ text }: { text: string }) => {
