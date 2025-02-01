@@ -1,590 +1,5 @@
 import { ComponentType, FC, ReactElement } from "react";
 
-export const acts: Record<string, Array<ReactElement | string>> = {
-  "1": [
-    "The Riverbank",
-    <div>Kill the boss then enter town</div>,
-    "In Town",
-    <div>Hand in quests and head out to Clearfell</div>,
-    "In Clearfell",
-    <div>
-      Kill Beira of the Rotten Pack. She's North/North East of the waypoint.
-      Rewards 10% Cold Res.
-    </div>,
-    <div>Find the entrance to Grelwood.</div>,
-    "In Grelwood",
-    <div>Find the waypoint and talk to the quest NPC. Usually central.</div>,
-    <div>
-      Find the entrance to Grim Tangle, take the waypoint, and go back to
-      Grelwood.
-    </div>,
-    <div>Find the entrance to Red Vale and go through.</div>,
-    "In Red Vale",
-    <div>Find the three obelisks and get the three quest items.</div>,
-    <div>
-      After getting the third, WP to town and talk to Renly to acquire the Runed
-      Spikes. WP to Grelwood.
-    </div>,
-    "In Grelwood",
-    <div>Summon and talk to Una.</div>,
-    <div>Stab the tree with your runed spikes then talk to Una.</div>,
-    <div>
-      Go back to town, talk to NPCs, then head to Grim Tangle via waypoint to
-      Grelwood.
-    </div>,
-    "In Grim Tangle",
-    <div>
-      Find the entrance to the Cemetery of The Eternals. The Druid boss can be
-      skipped.
-    </div>,
-    "In Cemetary of The Eternals",
-    <div>Find the Mausoleum and kill the boss in there.</div>,
-    <div>Find the Tomb and kill the boss in there.</div>,
-    <div>Talk to Lachlann, open the gate, and kill him. ☹</div>,
-    <div>Enter Hunting Grounds</div>,
-    "In Hunting Grounds",
-    <div>Find and kill Crowbell. Rewards two skill points.</div>,
-    <div>Find and enter Ogham Farmlands.</div>,
-    "In Ogham Farmlands",
-    <div>
-      Find Una's lute. Usually around the center of the zone. Rewards 2 skill
-      points.
-    </div>,
-    <div>
-      Find and kill Vargir The Feral Mutt in the Crop Circle. Drops a level 4
-      skill gem.
-    </div>,
-    <div>
-      Find and take the entrance to Ogham Village and WP back to the Hunting
-      Grounds.
-    </div>,
-    "In Hunting Grounds",
-    <div>Find and enter Freythorn.</div>,
-    "In Freythorn",
-    <div>
-      Do all 4 rituals, killing The King of The Mists at the end. Rewards 30
-      spirit.
-    </div>,
-    <div>TP back to town and waypoint to Ogham Village.</div>,
-    "In Ogham Village",
-    <div>If it's your first character of the league; Find Smithing Tools.</div>,
-    <div>Find and kill The Executioner</div>,
-    <div>Go to The Manor Ramparts</div>,
-    "In The Manor Ramparts",
-    <div>
-      Find the entrance to to Ogham Manor. This is always in the opposite
-      direction of the waypoint after you zone in.
-    </div>,
-    "In Ogham Manor",
-    <div>Find and kill Candlemass</div>,
-    <div>Find and go down stairs twice</div>,
-    <div>Find elevator to boss, kill boss, go back to town</div>,
-    "In Town",
-    <div>
-      If it's your first character of the league; Talk to Renly to turn in the
-      smithing tools
-    </div>,
-    <div>Talk to the hooded one to go to act 2</div>,
-  ],
-  "2": [
-    "In Vastiri Outskirts",
-    <div>Find and kill Rathbreaker</div>,
-    <div>Portal back to camp, enter caravan</div>,
-    "In Town",
-    <div>Speak to everyone then use the desert map to go to Mawdun Quarry</div>,
-    "In Mawdun Quarry",
-    <div>Find and take the entrance to Mawdun Mine</div>,
-    "In Mawdun Mine",
-    <div>Find and kill Rudja</div>,
-    <div>Talk to Risu then portal back to town</div>,
-    "In Town",
-    <div>Talk to Risu, then use desert map to go to halani gates</div>,
-    <div>
-      Talk to Asala at the gates, go back to the caravan, talk to Risu again,
-      then to Asala again
-    </div>,
-    <div>Use desert map to go to halani gates again</div>,
-    "In Traitor's Passage",
-    <div>Find and kill Basala, pick up the Djinn Barya quest item</div>,
-    <div>Find the entrance to the Halani Gates</div>,
-    "In The Halani Gates",
-    <div>
-      Find and kill Jamanra The Risen King. Stay close to the canyon. Cross the
-      canyon 3 times to find the boss.
-    </div>,
-    <div>
-      Go down the stairs and to the bottom right of the zone, then back to town
-    </div>,
-    "In Town",
-    <div>Use the desert map to go to the Trial of Sekhemas</div>,
-    <div>Talk to everyone, then use desert map to go to Keth</div>,
-    "In Keth",
-    <div>Kill Kabala, the constrictor queen. Rewards 2 skill points.</div>,
-    <div>Kill snakes until you find the Kabala Clan relic.</div>,
-    <div>Find entrance to The Lost City</div>,
-    <div>Go to The Lost City.</div>,
-    "In The Lost City",
-    <div>
-      Find Entrance and go to the buried shrines, then the Heart of Keth
-    </div>,
-    <div>Kill Azaraian The Forsaken Son</div>,
-    <div>
-      Talk to the goddess, loot the cinders, burn the goddess, loot the essence
-      of water.
-    </div>,
-    <div>Head back to town.</div>,
-    "In Town",
-    <div>Use desert map to go to Mastodon Badlands</div>,
-    "In Mastodon Badlands",
-    <div>Find the Entrance to The Bone Pits</div>,
-    "In The Bone Pits",
-    <div>Find and kill the zone boss and loot the horn</div>,
-    <div>Kill Hyenas until you found the sun clan relic</div>,
-    <div>Tp back to town.</div>,
-    "In Town",
-    <div>Use desert map to go to The Valley of Titans</div>,
-    "In The Valley of Titans",
-    <div>Find and click the three ancient seals</div>,
-    <div>
-      Find the medallion and place the two relics in there. Rewards a permanent
-      buff.
-    </div>,
-    <div>Find and take the entrance to Titan Grotto</div>,
-    "In Titan Grotto",
-    <div>Find and kill the boss, then go back to town</div>,
-    "In Town",
-    <div>Talk to Zarka, then Asala</div>,
-    <div>Use the desert map to travel to the halani gates</div>,
-    <div>Go to the front of the caravan and sound the horn</div>,
-    <div>Use the desert map to travel to Deshar</div>,
-    "In Deshar",
-    <div>
-      Find the final letter on a corpse on the ground. Rewards two skill points
-      on hand in.
-    </div>,
-    <div>Find the entrance to the path of mourning</div>,
-    <div>Go the The Path of Mourning</div>,
-    "In The Path of Mourning",
-    <div>Find the entrance to the Spires of Deshar</div>,
-    "In Spires of Deshar",
-    <div>Find the sisters of Garukhan</div>,
-    <div>Find and kill Tor Gul, The Defiler</div>,
-    <div>Portal back to town</div>,
-    "In Town",
-    <div>Turn in the final letter at Shambrin</div>,
-    <div>Talk to everyone, then use desert map to go to the dreadnought</div>,
-    "In The Dreadnought",
-    <div>
-      Find the entrance to the dreadnought vanguard, then find and kill Jamara,
-      The Abomination
-    </div>,
-    <div>Portal back to town</div>,
-    "In Town",
-    <div>Leave the Caravan and talk to the Hooded one</div>,
-    <div>Go back to the Caravan and talk to Asala to go to Act 3</div>,
-  ],
-  "3": [
-    "In Sandswept Marsh",
-    <div>Find the entrance to the Ziggurat Encampment (town).</div>,
-    "In Town",
-    <div>Talk to everyone and entrance into Jungle Ruins</div>,
-    "In Jungle Ruins",
-    <div>Find the entrance to venom crypts (near waypoint)</div>,
-    <div>Find and kill The Mighty Silverfist</div>,
-    <div>Find and go through the entrance to Infested Barrens</div>,
-    "In Infested Barrens",
-    <div>
-      Find the entrance to Chimeral Wetlands. Enter zone, take waypoint,
-      backtrack to Infested Barrens.
-    </div>,
-    <div>
-      Find the entrance to Azak Bog. Enter zone, take waypoint, backtrack to
-      Infested Barrens.
-    </div>,
-    <div>Find the entrance to the Matlan Waterways and the waypoint.</div>,
-    <div>
-      Zone Note: Whichever waypoint you find last, use it to travel back to
-      Jungle Ruins.
-    </div>,
-    "In Jungle Ruins",
-    <div>Enter the Venom Crypts</div>,
-    "In Venom Crypts",
-    <div>Find the corpse for the venom phial, then go back to town</div>,
-    "In Town",
-    <div>
-      Go back to town, turn in phial at Servi for a reward. This can not be
-      changed later.
-    </div>,
-    <div>Go to the Azak Bog.</div>,
-    "In Azak Bog",
-    <div className="flex flex-row gap-2">
-      Optional: Find the Flameskin ritual and activate all, it gives 25% fire
-      res and rarity for the rest of the zone
-    </div>,
-    <div>Find and kill Ignagduk. Rewards 30 spirit.</div>,
-    <div>Go back to town and then to The Chimeral Wetlands</div>,
-    "In The Chimeral Wetlands",
-    <div>Find the temple/trial of chaos. </div>,
-    <div>Find and kill the chimeara boss</div>,
-    <div>Enter Juquani's Machinarium</div>,
-    "In Jiquani's Machinarium",
-    <div>Find the first small soul core, then open the door</div>,
-    <div>Find two more small soul cores</div>,
-    <div>Find the entrance towards Jiquani's sanctum</div>,
-    <div>Find and kill Blackjaw. Rewards 10% fire res.</div>,
-    <div>Checkpoint port to the entrance, then go to Jiquani's Sanctum</div>,
-    "In Jiquani's Sanctum",
-    <div>Don't forget the activate the waypoint right after the entry.</div>,
-    <div>Talk to Alva</div>,
-    <div>Find two medium soul cores</div>,
-    <div>
-      "Activate both generators. Place down a portal BEFORE you activate the
-      second generator."
-    </div>,
-    <div>Portal back to town and waypoint back to the Jiquani's Sanctum.</div>,
-    <div>Kill Zicoatl, Warden of The Core and loot the large soul core</div>,
-    <div>Go back to the infested barrens waypoint</div>,
-    "In Infested Barrens",
-    <div>Insert the large soul core and go to Matlan Waterways afterwards</div>,
-    "In Matlan Waterways",
-    <div>
-      Activate every single lever to navigate through the zone, then activate
-      the big one at the end
-    </div>,
-    <div>Tp back to town</div>,
-    "In Town",
-    <div>Go down the stairs near the well / the hooded one</div>,
-    <div>Talk to Alva, enter The Drowned City</div>,
-    "In The Drowned City",
-    <div>
-      If it's your first character of the league; Find the entrance to The
-      Molten Vault. Enter zone, take waypoint, backtrack to The Drowned City.
-    </div>,
-    <div>
-      Find the entrance to The Apex of Filth. Enter zone, take waypoint, and if
-      it's your first character of the league; backtrack to The Drowned City.
-    </div>,
-    <div>
-      If it's your first character of the league; Enter the Molten Vault.
-      Otherwise enter The Apex of Filth.
-    </div>,
-    "In The Molten Vault",
-    <div>Find and kill the boss, then talk to Oswald back in town</div>,
-    <div>Enter The Apex of Filth</div>,
-    "In The Apex of Filth",
-    <div>Find and kill The Queen of Filth, then portal back to town</div>,
-    "In Town",
-    <div>
-      Go down the stairs near the well / the hooded one again, and enter The
-      Temple of Kopec
-    </div>,
-    "In The Temple of Kopec",
-    <div>
-      Go up the stairs twice, then kill Ketzuli, High Priest of The Sun
-    </div>,
-    "In Town",
-    <div>Talk to Alva and ride the elevator up</div>,
-    <div>
-      Go through the gateway, then down the stairs again to enter Utzaal
-    </div>,
-    "In Utzaal",
-    <div>Search and kill Viper Napuatzi.</div>,
-    <div>Find the entrance to Aggorat and enter Aggorat.</div>,
-    "In Aggorat",
-    <div>
-      Follow the voices of the trial of Atziri, go through to find the next
-      checkpoint
-    </div>,
-    <div>Find the entrance towards the Black Chambers</div>,
-    <div>Find the Sacrificial table</div>,
-    <div>Farm The Sacrificial Heart if you haven't found it yet.</div>,
-    <div>
-      Use the checkpoint to go the sacrificial table, loot the dagger, place the
-      heart, stab the heart
-    </div>,
-    <div>
-      Use the checkpoint to go to The Black Chambers, enter The Black Chambers
-    </div>,
-    "In The Black Chambers",
-    <div>Find and defeat Doryiani, Royal Thaumaturge</div>,
-    <div>Port back to town, walk through the gateway to enter Act 1 Cruel</div>,
-  ],
-  "1 Cruel": [
-    "In Town",
-    <div>Kill the boss then enter town</div>,
-    <div>Hand in quests and head out to Clearfell</div>,
-    "In Clearfell",
-    <div>
-      Kill Beira of the Rotten Pack. She's North/North East of the waypoint.
-      Rewards 10% Cold Res.
-    </div>,
-    <div>Find the entrance to Grelwood.</div>,
-    "In Grelwood",
-    <div>Find the waypoint and talk to the quest NPC. Usually central.</div>,
-    <div>
-      Find the entrance to Grim Tangle, take the waypoint, and go back to
-      Grelwood.
-    </div>,
-    <div>Find the entrance to Red Vale and go through.</div>,
-    "In Red Vale",
-    <div>Find the three obelisks and get the three quest items.</div>,
-    <div>
-      After getting the third, WP to town and talk to Renly to acquire the Runed
-      Spikes. WP to Grelwood.
-    </div>,
-    "In Grelwood",
-    <div>Summon and talk to Una.</div>,
-    <div>Stab the tree with your runed spikes then talk to Una.</div>,
-    <div>
-      Go back to town, talk to NPCs, then head to Grim Tangle via waypoint to
-      Grelwood.
-    </div>,
-    "In Grim Tangle",
-    <div>
-      Find the entrance to the Cemetery of The Eternals. The Druid boss can be
-      skipped.
-    </div>,
-    "In Cemetary of The Eternals",
-    <div>Find the Mausoleum and kill the boss in there.</div>,
-    <div>Find the Tomb and kill the boss in there.</div>,
-    <div>Talk to Lachlan, open the gate, and kill him. ☹</div>,
-    <div>Enter Hunting Grounds</div>,
-    "In Hunting Grounds",
-    <div>Find and kill Crowbell. Rewards two skill points.</div>,
-    <div>Find and enter Ogham Farmlands.</div>,
-    "In Ogham Farmlands",
-    <div>
-      Find Una's lute. Usually around the center of the zone. Rewards 2 skill
-      points.
-    </div>,
-    <div>Find and take the entrance to Ogham Village.</div>,
-    "In Ogham Village",
-    <div>Find and kill The Executioner</div>,
-    <div>Go to The Manor Ramparts</div>,
-    "In The Manor Ramparts",
-    <div>
-      Find the entrance to Ogham Manor. This is always in the opposite direction
-      of the waypoint after you zone in.
-    </div>,
-    "In Ogham Manor",
-    <div>Find and kill candlemass</div>,
-    <div>Find and go down stairs twice</div>,
-    <div>Find elevator to boss, kill boss, go back to town</div>,
-    "In Town",
-    <div>Talk to the hooded one to go to act 2</div>,
-  ],
-  "2 Cruel": [
-    "In Vastiri Outskirts",
-    <div>Find and kill Rathbreaker</div>,
-    <div>Portal back to camp, enter caravan</div>,
-    "In Town",
-    <div>Speak to everyone then use the desert map to go to Mawdun Quarry</div>,
-    "In Mawdun Quarry",
-    <div>Find and take the entrance to Mawdun Mine</div>,
-    "In Mawdun Mine",
-    <div>Find and kill Rudja</div>,
-    <div>Talk to Risu then portal back to town</div>,
-    "In Town",
-    <div>Talk to Risu, then use desert map to go to Halani Gates</div>,
-    <div>
-      Talk to Asala at the gates, go back to the caravan, talk to Risu again,
-      then to Asala again
-    </div>,
-    <div>Use desert map to go to Halani Gates again</div>,
-    "In Traitor's Passage",
-    <div>Find the entrance to the Halani Gates</div>,
-    "In The Halani Gates",
-    <div>
-      Find and kill Jamanra The Risen King. Stay close to the canyon. Cross the
-      canyon 3 times to find the boss.
-    </div>,
-    <div>
-      Go down the stairs and to the bottom right of the zone, then back to town
-    </div>,
-    "In Town",
-    <div>Talk to everyone, then use desert map to go to Keth</div>,
-    "In Keth",
-    <div>Kill Kabala, the constrictor queen. Rewards 2 skill points.</div>,
-    <div>Kill snakes until you find the Kabala Clan relic.</div>,
-    <div>Find entrance to the lost city</div>,
-    <div>Go to The Lost City.</div>,
-    "In The Lost City",
-    <div>
-      Find entrance and go to the buried shrines, then the heart of keth
-    </div>,
-    <div>Kill Azaraian the Forsaken Son</div>,
-    <div>
-      Talk to the goddess, loot the cinders, burn the goddess, loot the essence
-      of water.
-    </div>,
-    <div>Head back to town.</div>,
-    "In Town",
-    <div>Use desert map to go to Mastodon Badlands</div>,
-    "In Mastodon Badlands",
-    <div>Find the entrance to The Bone Pits</div>,
-    "In The Bone Pits",
-    <div>Find and kill the zone boss and loot the horn</div>,
-    <div>Kill Hyenas until you found the sun clan relic</div>,
-    <div>Tp back to town.</div>,
-    "In Town",
-    <div>Use desert map to go to The Valley of Titans</div>,
-    "In The Valley of Titans",
-    <div>Find and click the three ancient seals</div>,
-    <div>
-      Find the medallion and place the two relics in there. Rewards a permanent
-      buff.
-    </div>,
-    <div>Find and take the entrance to Titan Grotto</div>,
-    "In Titan Grotto",
-    <div>Find and kill the boss, then go back to town</div>,
-    "In Town",
-    <div>Talk to Zarka, then Asala</div>,
-    <div>Use the desert map to travel to the halani gates</div>,
-    <div>Go to the front of the caravan and sound the horn</div>,
-    <div>Use the desert map to travel to Deshar</div>,
-    "In Deshar",
-    <div>
-      Find the final letter on a corpse on the ground. Rewards two skill points
-      on hand in.
-    </div>,
-    <div>Find the entrance to the path of mourning</div>,
-    <div>Go the The Path of Mourning</div>,
-    "In The Path of Mourning",
-    <div>Find the entrance to the Spires of Deshar</div>,
-    "In Spires of Deshar",
-    <div>Find the sisters of Garukhan</div>,
-    <div>Find and kill Tor Gul, The Defiler</div>,
-    <div>Portal back to town</div>,
-    "In Town",
-    <div>Turn in the final letter at Shambrin</div>,
-    <div>Talk to everyone, then use desert map to go to the dreadnought</div>,
-    "In The Dreadnought",
-    <div>
-      Find the entrance to the dreadnought vanguard, then find and kill Jamara,
-      The Abomination
-    </div>,
-    <div>Portal back to town</div>,
-    "In Town",
-    <div>Leave the Caravan and talk to the Hooded one</div>,
-    <div>Go back to the Caravan and talk to Asala to go to Act 3</div>,
-  ],
-  "3 Cruel": [
-    "In Sandswept Marsh",
-    <div>Find the entrance to the Ziggurat Encampment (town).</div>,
-    "In Town",
-    <div>Talk to everyone and entrance into Jungle Ruins</div>,
-    "In Jungle Ruins",
-    <div>Find the entrance to venom crypts (near waypoint)</div>,
-    <div>Find and kill the mighty silverfist</div>,
-    <div>Find and go through the entrance to Infested Barrens</div>,
-    "In Infested Barrens",
-    <div>
-      Find the entrance to Chimeral Wetlands. Enter zone, take waypoint,
-      backtrack to Infested Barrens.
-    </div>,
-    <div>
-      Find the entrance to Azak Bog. Enter zone, take waypoint, backtrack to
-      Infested Barrens.
-    </div>,
-    <div>Find the entrance to the Matlan Waterways and the waypoint.</div>,
-    <div>
-      Zone Note: Whichever waypoint you find last, use it to travel back to
-      Jungle Ruins.
-    </div>,
-    "In Jungle Ruins",
-    <div>Enter the Venom Crypts</div>,
-    "In Venom Crypts",
-    <div>Find the corpse for the venom phial, then go back to town</div>,
-    "In Town",
-    <div>
-      Go back to town, turn in phial at Servi for a reward. This can not be
-      changed later.
-    </div>,
-    <div>Go to the Azak Bog.</div>,
-    "In Azak Bog",
-    <div className="flex flex-row gap-2">
-      <div className="italic">#Optional</div>Find the Flameskin ritual and
-      activate all, it gives 25% fire res and rarity for the rest of the zone
-    </div>,
-    <div>Find and kill Ignagduk. Rewards 30 spirit.</div>,
-    <div>Go back to town and then to The Chimeral Wetlands</div>,
-    "In The Chimeral Wetlands",
-    <div>Find and kill the chimeara boss</div>,
-    <div>Enter Juquani's Machinarium</div>,
-    "In Jiquani's Machinarium",
-    <div>Find the first small soul core, then open the door</div>,
-    <div>Find two more small soul cores</div>,
-    <div>Find the entrance towards Jiquani's sanctum</div>,
-    <div>Find and kill Blackjaw. Rewards 10% fire res.</div>,
-    <div>Checkpoint port to the entrance, then go to Jiquani's Sanctum</div>,
-    "In Jiquani's Sanctum",
-    <div>Don't forget the activate the waypoint right after the entry.</div>,
-    <div>Talk to Alva</div>,
-    <div>Find two medium soul cores</div>,
-    <div>
-      "Activate both generators. Place down a portal BEFORE you activate the
-      second generator."
-    </div>,
-    <div>Portal back to town and waypoint back to the Jiquani's Sanctum.</div>,
-    <div>Kill Zicoatl, Warden of the core and loot the large soul core</div>,
-    <div>Go back to the infested barrens waypoint</div>,
-    "In Infested Barrens",
-    <div>Insert the large soul core and go to Matlan Waterways afterwards</div>,
-    "In Matlan Waterways",
-    <div>
-      Activate every single lever to navigate through the zone, then activate
-      the big one at the end
-    </div>,
-    <div>Tp back to town</div>,
-    "In Town",
-    <div>Go down the stairs near the well / the hooded one</div>,
-    <div>Talk to Alva, enter The Drowned City</div>,
-    "In The Drowned City",
-    <div>
-      Find the entrance to The Apex of Filth. Enter zone, take waypoint, and if
-      it's your first character of the league; backtrack to The Drowned City.
-    </div>,
-    <div>Enter The Apex of Filth.</div>,
-    "In The Apex of Filth",
-    <div>Find and kill the queen of filth, then portal back to town</div>,
-    "In Town",
-    <div>
-      Go down the stairs near the well / the hooded one again, and enter The
-      Temple of Kopec
-    </div>,
-    "In The Temple of Kopec",
-    <div>
-      Go up the stairs twice, then kill Ketzuli, High Priest of The Sun
-    </div>,
-    "In Town",
-    <div>Talk to Alva and ride the elevator up</div>,
-    <div>
-      Go through the gateway, then down the stairs again to enter Utzaal
-    </div>,
-    "In Utzaal",
-    <div>Search and kill Viper Napuatzi.</div>,
-    <div>Find the entrance to Aggorat and enter Aggorat.</div>,
-    "In Aggorat",
-    <div>
-      Follow the voices of the trial of Atziri, go through to find the next
-      checkpoint
-    </div>,
-    <div>Find the entrance towards the Black Chambers</div>,
-    <div>Find the Sacrificial table</div>,
-    <div>Farm The Sacrificial Heart if you haven't found it yet.</div>,
-    <div>
-      Use the checkpoint to go the sacrificial table, loot the dagger, place the
-      heart, stab the heart
-    </div>,
-    <div>
-      Use the checkpoint to go to The Black Chambers, enter The Black Chambers
-    </div>,
-    "In The Black Chambers",
-    <div>Find and defeat Doryiani, Royal Thaumaturge</div>,
-    <div>Port back to town, talk to Doryiana to finish the campaign!</div>,
-  ],
-};
-
 export class LocationSteps {
   title: string;
   steps: React.JSX.Element[];
@@ -604,7 +19,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
   "1": [
     {
       title: "In The Riverbank",
-      steps: ["Kill the boss then enter town"],
+      steps: ["Kill The Bloated Miller then enter town"],
       hasWaypoint: false,
     },
     {
@@ -624,13 +39,13 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In The Grelwood",
       steps: [
         "Find the waypoint and talk to the quest NPC. Usually central.",
-        "Find the entrance to Grim Tangle, take the waypoint, and go back to The Grelwood.",
-        "Find the entrance to Red Vale and go through.",
+        "Find the entrance to The Grim Tangle, take the waypoint, and go back to The Grelwood.",
+        "Find the entrance to The Red Vale and go through.",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Red Vale",
+      title: "In The Red Vale",
       steps: [
         "Find the three obelisks and get the three quest items.",
         "After getting the third, WP to town and talk to Renly to acquire the Runed Spikes. WP to The Grelwood.",
@@ -642,12 +57,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       steps: [
         "Summon and talk to Una.",
         "Stab the tree with your runed spikes then talk to Una.",
-        "Go back to town, talk to NPCs, then head to Grim Tangle via waypoint to The Grelwood.",
+        "Go back to town, talk to NPCs, then head to The Grim Tangle via waypoint to The Grelwood.",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Grim Tangle",
+      title: "In The Grim Tangle",
       steps: [
         "Find the entrance to the Cemetery of The Eternals. The Druid boss can be skipped.",
       ],
@@ -656,8 +71,8 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Cemetary of The Eternals",
       steps: [
-        "Find the Mausoleum and kill the boss in there.",
-        "Find the Tomb and kill the boss in there.",
+        "Find Mausoleum of the Praetor and kill the boss in there.",
+        "Find the Tomb of the Consort and kill the boss in there.",
         "Talk to Lachlann, open the gate, and kill him. ☹",
         "Enter Hunting Grounds",
       ],
@@ -666,7 +81,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Hunting Grounds",
       steps: [
-        "Find and kill Crowbell. Rewards two skill points.",
+        "Find and kill The Crowbell. Rewards two skill points.",
         "Find and enter Ogham Farmlands.",
       ],
       hasWaypoint: false,
@@ -688,7 +103,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Freythorn",
       steps: [
-        "Do all 4 rituals, killing The King of The Mists at the end. Rewards 30 spirit.",
+        "Do all 4 rituals, killing The King in the Mists at the end. Rewards 30 spirit.",
         "TP back to town and waypoint to Ogham Village.",
       ],
       hasWaypoint: false,
@@ -712,7 +127,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Ogham Manor",
       steps: [
-        "Find and kill Candlemass",
+        "Find and kill Candlemass, the Living Rite",
         "Find and go down stairs twice",
         "Find elevator to boss, kill boss, go back to town",
       ],
@@ -722,7 +137,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Town",
       steps: [
         "If it's your first character of the league; Talk to Renly to turn in the smithing tools",
-        "Talk to the hooded one to go to act 2",
+        "Talk to The Hooded One to go to act 2",
       ],
       hasWaypoint: false,
     },
@@ -732,7 +147,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Vastiri Outskirts",
       steps: [
         "Find and kill Rathbreaker",
-        "Portal back to camp, enter caravan",
+        "Portal back to camp, enter The Ardura Caravan",
       ],
       hasWaypoint: false,
     },
@@ -750,15 +165,15 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     },
     {
       title: "In Mawdun Mine",
-      steps: ["Find and kill Rudja", "Talk to Risu then portal back to town"],
+      steps: ["Find and kill Rudja, the Dread Engineer", "Talk to Risu then portal back to town"],
       hasWaypoint: false,
     },
     {
       title: "In Town",
       steps: [
-        "Talk to Risu, then use desert map to go to halani gates",
-        "Talk to Asala at the gates, go back to the caravan, talk to Risu again, then to Asala again",
-        "Use desert map to go to halani gates again",
+        "Talk to Risu, then use desert map to go to The Halani Gates gates",
+        "Talk to Sekhema Asala at the gates, go back to the caravan, talk to Risu again, then to Sekhema Asala again",
+        "Use desert map to go to The Halani Gates gates again",
       ],
       hasWaypoint: false,
     },
@@ -766,14 +181,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Traitor's Passage",
       steps: [
         "Find and kill Basala, pick up the Djinn Barya quest item",
-        "Find the entrance to the Halani Gates",
+        "Find the entrance to The Halani Gates",
       ],
       hasWaypoint: false,
     },
     {
       title: "In The Halani Gates",
       steps: [
-        "Find and kill Jamanra The Risen King. Stay close to the canyon. Cross the canyon 3 times to find the boss.",
+        "Find and kill Jamanra, the Risen King. Stay close to the canyon. Cross the canyon 3 times to find the boss.",
         "Go down the stairs and to the bottom right of the zone, then back to town",
       ],
       hasWaypoint: false,
@@ -789,19 +204,18 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Keth",
       steps: [
-        "Kill Kabala, the constrictor queen. Rewards 2 skill points.",
+        "Kill Kabala, Constrictor Queen, the constrictor queen. Rewards 2 skill points.",
         "Kill snakes until you find the Kabala Clan relic.",
-        "Find entrance to The Lost City",
-        "Go to The Lost City.",
+        "Find and enter The Lost City",
       ],
       hasWaypoint: false,
     },
     {
       title: "In The Lost City",
       steps: [
-        "Find Entrance and go to the buried shrines, then the Heart of Keth",
-        "Kill Azaraian The Forsaken Son",
-        "Talk to the goddess, loot the cinders, burn the goddess, loot the essence of water.",
+        "Find Entrance and go to Buried Shrines, then the Heart of Keth",
+        "Kill Azarian, the Forsaken Son",
+        "Talk to Halani, the Water Goddess, loot the cinders, burn the goddess, loot the essence of water.",
         "Head back to town.",
       ],
       hasWaypoint: false,
@@ -821,21 +235,21 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       steps: [
         "Find and kill the zone boss and loot the horn",
         "Kill Hyenas until you found the sun clan relic",
-        "Tp back to town.",
+        "TP back to town.",
       ],
       hasWaypoint: false,
     },
     {
       title: "In Town",
-      steps: ["Use desert map to go to The Valley of Titans"],
+      steps: ["Use desert map to go to Valley of the Titans"],
       hasWaypoint: false,
     },
     {
-      title: "In The Valley of Titans",
+      title: "In Valley of the Titans",
       steps: [
         "Find and click the three ancient seals",
         "Find the medallion and place the two relics in there. Rewards a permanent buff.",
-        "Find and take the entrance to Titan Grotto",
+        "Find and take the entrance to The Titan Grotto",
       ],
       hasWaypoint: false,
     },
@@ -847,7 +261,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Town",
       steps: [
-        "Talk to Zarka, then Asala",
+        "Talk to Zarka, then Sekhema Asala",
         "Use the desert map to travel to the halani gates",
         "Go to the front of the caravan and sound the horn",
         "Use the desert map to travel to Deshar",
@@ -865,14 +279,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     },
     {
       title: "In The Path of Mourning",
-      steps: ["Find the entrance to the Spires of Deshar"],
+      steps: ["Find the entrance to The Spires of Deshar"],
       hasWaypoint: false,
     },
     {
-      title: "In Spires of Deshar",
+      title: "In The Spires of Deshar",
       steps: [
         "Find the sisters of Garukhan",
-        "Find and kill Tor Gul, The Defiler",
+        "Find and kill Tor Gul, the Defiler",
         "Portal back to town",
       ],
       hasWaypoint: false,
@@ -881,14 +295,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Town",
       steps: [
         "Turn in the final letter at Shambrin",
-        "Talk to everyone, then use desert map to go to the dreadnought",
+        "Talk to everyone, then use desert map to go to The Dreadnought",
       ],
       hasWaypoint: false,
     },
     {
       title: "In The Dreadnought",
       steps: [
-        "Find the entrance to the dreadnought vanguard, then find and kill Jamara, The Abomination",
+        "Find the entrance to The Dreadnought vanguard, then find and kill Jamanra, the Abomination",
         "Portal back to town",
       ],
       hasWaypoint: false,
@@ -896,8 +310,8 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Town",
       steps: [
-        "Leave the Caravan and talk to the Hooded one",
-        "Go back to the Caravan and talk to Asala to go to Act 3",
+        "Leave the Caravan and talk to The Hooded One",
+        "Go back to the Caravan and talk to Sekhema Asala to go to Act 3",
       ],
       hasWaypoint: false,
     },
@@ -916,8 +330,8 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Jungle Ruins",
       steps: [
-        "Find the entrance to venom crypts (near waypoint)",
-        "Find and kill The Mighty Silverfist",
+        "Find the entrance to The Venom Crypts (near waypoint)",
+        "Find and kill Mighty Silverfist",
         "Find and go through the entrance to Infested Barrens",
       ],
       hasWaypoint: false,
@@ -926,15 +340,15 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Infested Barrens",
       steps: [
         "Find the entrance to Chimeral Wetlands. Enter zone, take waypoint, backtrack to Infested Barrens.",
-        "Find the entrance to Azak Bog. Enter zone, take waypoint, backtrack to Infested Barrens.",
-        "Find the entrance to the Matlan Waterways and the waypoint.",
+        "Find the entrance to The Azak Bog. Enter zone, take waypoint, backtrack to Infested Barrens.",
+        "Find the entrance to The Matlan Waterways and the waypoint.",
         "Zone Note: Whichever waypoint you find last, use it to travel back to Jungle Ruins.",
       ],
       hasWaypoint: false,
     },
     {
       title: "In Jungle Ruins",
-      steps: ["Enter the Venom Crypts"],
+      steps: ["Enter The Venom Crypts"],
       hasWaypoint: false,
     },
     {
@@ -946,15 +360,15 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Town",
       steps: [
         "Go back to town, turn in phial at Servi for a reward. This can not be changed later.",
-        "Go to the Azak Bog.",
+        "Go to The Azak Bog.",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Azak Bog",
+      title: "In The Azak Bog",
       steps: [
         "Optional: Find the Flameskin ritual and activate all, it gives 25% fire res and rarity for the rest of the zone",
-        "Find and kill Ignagduk. Rewards 30 spirit.",
+        "Find and kill Ignagduk, the Bog Witch. Rewards 30 spirit.",
         "Go back to town and then to The Chimeral Wetlands",
       ],
       hasWaypoint: false,
@@ -962,9 +376,9 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In The Chimeral Wetlands",
       steps: [
-        "Find the temple/trial of chaos. ",
-        "Find and kill the chimeara boss",
-        "Enter Juquani's Machinarium",
+        "Find the temple/Trial of Chaos. ",
+        "Find and kill Xyclucian, the Chimera",
+        "Enter Jiquani's Machinarium",
       ],
       hasWaypoint: false,
     },
@@ -973,8 +387,8 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       steps: [
         "Find the first small soul core, then open the door",
         "Find two more small soul cores",
-        "Find the entrance towards Jiquani's sanctum",
-        "Find and kill Blackjaw. Rewards 10% fire res.",
+        "Find the entrance towards Jiquani's Sanctum",
+        "Find and kill Blackjaw, the Remnant. Rewards 10% fire res.",
         "Checkpoint port to the entrance, then go to Jiquani's Sanctum",
       ],
       hasWaypoint: false,
@@ -985,22 +399,22 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Don't forget the activate the waypoint right after the entry.",
         "Talk to Alva",
         "Find two medium soul cores",
-        '"Activate both generators. Place down a portal BEFORE you activate the second generator."',
+        "Activate both generators. Place down a portal BEFORE you activate the second generator.",
         "Portal back to town and waypoint back to the Jiquani's Sanctum.",
-        "Kill Zicoatl, Warden of The Core and loot the large soul core",
-        "Go back to the infested barrens waypoint",
+        "Kill Zicoatl, Warden of the Core and loot the large soul core",
+        "Go back to Infested Barrens waypoint",
       ],
       hasWaypoint: false,
     },
     {
       title: "In Infested Barrens",
       steps: [
-        "Insert the large soul core and go to Matlan Waterways afterwards",
+        "Insert the large soul core and go to The Matlan Waterways afterwards",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Matlan Waterways",
+      title: "In The Matlan Waterways",
       steps: [
         "Activate every single lever to navigate through the zone, then activate the big one at the end",
         "Tp back to town",
@@ -1010,7 +424,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Town",
       steps: [
-        "Go down the stairs near the well / the hooded one",
+        "Go down the stairs near the well / The Hooded One",
         "Talk to Alva, enter The Drowned City",
       ],
       hasWaypoint: false,
@@ -1040,14 +454,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Town",
       steps: [
-        "Go down the stairs near the well / the hooded one again, and enter The Temple of Kopec",
+        "Go down the stairs near the well / The Hooded One again, and enter The Temple of Kopec",
       ],
       hasWaypoint: false,
     },
     {
       title: "In The Temple of Kopec",
       steps: [
-        "Go up the stairs twice, then kill Ketzuli, High Priest of The Sun",
+        "Go up the stairs twice, then kill Ketzuli, High Priest of the Sun",
       ],
       hasWaypoint: false,
     },
@@ -1070,19 +484,19 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Aggorat",
       steps: [
-        "Follow the voices of the trial of Atziri, go through to find the next checkpoint",
-        "Find the entrance towards the Black Chambers",
-        "Find the Sacrificial table",
+        "Follow the voices of the Trial of Atziri, go through to find the next checkpoint",
+        "Find the entrance towards The Black Chambers",
+        "Find the sacrificial table",
         "Farm The Sacrificial Heart if you haven't found it yet.",
         "Use the checkpoint to go the sacrificial table, loot the dagger, place the heart, stab the heart",
-        "Use the checkpoint to go to The Black Chambers, enter The Black Chambers",
+        "Use the checkpoint to go to The Black Chambers",
       ],
       hasWaypoint: false,
     },
     {
       title: "In The Black Chambers",
       steps: [
-        "Find and defeat Doryiani, Royal Thaumaturge",
+        "Find and defeat Doryani, Royal Thaumaturge",
         "Port back to town, walk through the gateway to enter Act 1 Cruel",
       ],
       hasWaypoint: false,
@@ -1092,7 +506,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Town",
       steps: [
-        "Kill the boss then enter town",
+        "Kill The Bloated Miller then enter town",
         "Hand in quests and head out to Clearfell",
       ],
       hasWaypoint: false,
@@ -1109,13 +523,13 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In The Grelwood",
       steps: [
         "Find the waypoint and talk to the quest NPC. Usually central.",
-        "Find the entrance to Grim Tangle, take the waypoint, and go back to The Grelwood.",
-        "Find the entrance to Red Vale and go through.",
+        "Find the entrance to The Grim Tangle, take the waypoint, and go back to The Grelwood.",
+        "Find the entrance to The Red Vale and go through.",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Red Vale",
+      title: "In The Red Vale",
       steps: [
         "Find the three obelisks and get the three quest items.",
         "After getting the third, WP to town and talk to Renly to acquire the Runed Spikes. WP to The Grelwood.",
@@ -1127,23 +541,23 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       steps: [
         "Summon and talk to Una.",
         "Stab the tree with your runed spikes then talk to Una.",
-        "Go back to town, talk to NPCs, then head to Grim Tangle via waypoint to The Grelwood.",
+        "Go back to town, talk to NPCs, then head to The Grim Tangle via waypoint to The Grelwood.",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Grim Tangle",
+      title: "In The Grim Tangle",
       steps: [
-        "Find the entrance to the Cemetery of The Eternals. The Druid boss can be skipped.",
+        "Find the entrance to Cemetery of the Eternals. The Druid boss can be skipped.",
       ],
       hasWaypoint: false,
     },
     {
       title: "In Cemetary of The Eternals",
       steps: [
-        "Find the Mausoleum and kill the boss in there.",
-        "Find the Tomb and kill the boss in there.",
-        "Talk to Lachlan, open the gate, and kill him. ☹",
+        "Find Mausoleum of the Praetor and kill the boss in there.",
+        "Find Tomb of the Consort and kill the boss in there.",
+        "Talk to Lachlann, open the gate, and kill him. ☹",
         "Enter Hunting Grounds",
       ],
       hasWaypoint: false,
@@ -1151,7 +565,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Hunting Grounds",
       steps: [
-        "Find and kill Crowbell. Rewards two skill points.",
+        "Find and kill The Crowbell. Rewards two skill points.",
         "Find and enter Ogham Farmlands.",
       ],
       hasWaypoint: false,
@@ -1179,7 +593,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Ogham Manor",
       steps: [
-        "Find and kill candlemass",
+        "Find and kill Candlemass, the Living Rite",
         "Find and go down stairs twice",
         "Find elevator to boss, kill boss, go back to town",
       ],
@@ -1187,7 +601,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     },
     {
       title: "In Town",
-      steps: ["Talk to the hooded one to go to act 2"],
+      steps: ["Talk to The Hooded One to go to act 2"],
       hasWaypoint: false,
     },
   ],
@@ -1214,27 +628,27 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     },
     {
       title: "In Mawdun Mine",
-      steps: ["Find and kill Rudja", "Talk to Risu then portal back to town"],
+      steps: ["Find and kill Rudja, the Dread Engineer", "Talk to Risu then portal back to town"],
       hasWaypoint: false,
     },
     {
       title: "In Town",
       steps: [
-        "Talk to Risu, then use desert map to go to Halani Gates",
-        "Talk to Asala at the gates, go back to the caravan, talk to Risu again, then to Asala again",
-        "Use desert map to go to Halani Gates again",
+        "Talk to Risu, then use desert map to go to The Halani Gates",
+        "Talk to Sekhema Asala at the gates, go back to the caravan, talk to Risu again, then to Sekhema Asala again",
+        "Use desert map to go to The Halani Gates again",
       ],
       hasWaypoint: false,
     },
     {
       title: "In Traitor's Passage",
-      steps: ["Find the entrance to the Halani Gates"],
+      steps: ["Find the entrance to The Halani Gates"],
       hasWaypoint: false,
     },
     {
       title: "In The Halani Gates",
       steps: [
-        "Find and kill Jamanra The Risen King. Stay close to the canyon. Cross the canyon 3 times to find the boss.",
+        "Find and kill Jamanra, the Risen King. Stay close to the canyon. Cross the canyon 3 times to find the boss.",
         "Go down the stairs and to the bottom right of the zone, then back to town",
       ],
       hasWaypoint: false,
@@ -1247,19 +661,18 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Keth",
       steps: [
-        "Kill Kabala, the constrictor queen. Rewards 2 skill points.",
+        "Kill Kabala, Constrictor Queen. Rewards 2 skill points.",
         "Kill snakes until you find the Kabala Clan relic.",
-        "Find entrance to the lost city",
-        "Go to The Lost City.",
+        "Find and enter The Lost City.",
       ],
       hasWaypoint: false,
     },
     {
       title: "In The Lost City",
       steps: [
-        "Find entrance and go to the buried shrines, then the heart of keth",
-        "Kill Azaraian the Forsaken Son",
-        "Talk to the goddess, loot the cinders, burn the goddess, loot the essence of water.",
+        "Find entrance and go to the Buried Shrines, then the heart of keth",
+        "Kill Azarian, the Forsaken Son",
+        "Talk to Halani, the Water Goddess, loot the cinders, burn the goddess, loot the essence of water.",
         "Head back to town.",
       ],
       hasWaypoint: false,
@@ -1278,27 +691,27 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In The Bone Pits",
       steps: [
         "Find and kill the zone boss and loot the horn",
-        "Kill Hyenas until you found the sun clan relic",
+        "Kill hyenas until you found the sun clan relic",
         "Tp back to town.",
       ],
       hasWaypoint: false,
     },
     {
       title: "In Town",
-      steps: ["Use desert map to go to The Valley of Titans"],
+      steps: ["Use desert map to go to Valley of the Titans"],
       hasWaypoint: false,
     },
     {
-      title: "In The Valley of Titans",
+      title: "In Valley of the Titans",
       steps: [
         "Find and click the three ancient seals",
         "Find the medallion and place the two relics in there. Rewards a permanent buff.",
-        "Find and take the entrance to Titan Grotto",
+        "Find and take the entrance to The Titan Grotto",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Titan Grotto",
+      title: "In The Titan Grotto",
       steps: ["Find and kill the boss, then go back to town"],
       hasWaypoint: false,
     },
@@ -1330,7 +743,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Spires of Deshar",
       steps: [
         "Find the sisters of Garukhan",
-        "Find and kill Tor Gul, The Defiler",
+        "Find and kill Tor Gul, the Defiler",
         "Portal back to town",
       ],
       hasWaypoint: false,
@@ -1346,7 +759,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In The Dreadnought",
       steps: [
-        "Find the entrance to the dreadnought vanguard, then find and kill Jamara, The Abomination",
+        "Find the entrance to the Dreadnought Vanguard, then find and kill Jamanra, the Abomination",
         "Portal back to town",
       ],
       hasWaypoint: false,
@@ -1354,8 +767,8 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Town",
       steps: [
-        "Leave the Caravan and talk to the Hooded one",
-        "Go back to the Caravan and talk to Asala to go to Act 3",
+        "Leave the The Ardura Caravan and talk to The Hooded One",
+        "Go back to The Ardura Caravan and talk to Sekhema Asala to go to Act 3",
       ],
       hasWaypoint: false,
     },
@@ -1374,8 +787,8 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Jungle Ruins",
       steps: [
-        "Find the entrance to venom crypts (near waypoint)",
-        "Find and kill the mighty silverfist",
+        "Find the entrance to The Venom Crypts (near waypoint)",
+        "Find and kill Mighty Silverfist",
         "Find and go through the entrance to Infested Barrens",
       ],
       hasWaypoint: false,
@@ -1384,19 +797,19 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Infested Barrens",
       steps: [
         "Find the entrance to Chimeral Wetlands. Enter zone, take waypoint, backtrack to Infested Barrens.",
-        "Find the entrance to Azak Bog. Enter zone, take waypoint, backtrack to Infested Barrens.",
-        "Find the entrance to the Matlan Waterways and the waypoint.",
+        "Find the entrance to The Azak Bog. Enter zone, take waypoint, backtrack to Infested Barrens.",
+        "Find the entrance to The Matlan Waterways and the waypoint.",
         "Zone Note: Whichever waypoint you find last, use it to travel back to Jungle Ruins.",
       ],
       hasWaypoint: false,
     },
     {
       title: "In Jungle Ruins",
-      steps: ["Enter the Venom Crypts"],
+      steps: ["Enter The Venom Crypts"],
       hasWaypoint: false,
     },
     {
-      title: "In Venom Crypts",
+      title: "In The Venom Crypts",
       steps: ["Find the corpse for the venom phial, then go back to town"],
       hasWaypoint: false,
     },
@@ -1404,12 +817,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       title: "In Town",
       steps: [
         "Go back to town, turn in phial at Servi for a reward. This can not be changed later.",
-        "Go to the Azak Bog.",
+        "Go to The Azak Bog.",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Azak Bog",
+      title: "In The Azak Bog",
       steps: [
         "Find the Flameskin ritual and activate all, it gives 25% fire res and rarity for the rest of the zone",
         "Find and kill Ignagduk. Rewards 30 spirit.",
@@ -1419,7 +832,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     },
     {
       title: "In The Chimeral Wetlands",
-      steps: ["Find and kill the chimeara boss", "Enter Juquani's Machinarium"],
+      steps: ["Find and kill Xyclucian, the Chimera", "Enter Jiquani's Machinarium"],
       hasWaypoint: false,
     },
     {
@@ -1427,7 +840,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
       steps: [
         "Find the first small soul core, then open the door",
         "Find two more small soul cores",
-        "Find the entrance towards Jiquani's sanctum",
+        "Find the entrance towards Jiquani's Sanctum",
         "Find and kill Blackjaw. Rewards 10% fire res.",
         "Checkpoint port to the entrance, then go to Jiquani's Sanctum",
       ],
@@ -1442,19 +855,19 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         '"Activate both generators. Place down a portal BEFORE you activate the second generator."',
         "Portal back to town and waypoint back to the Jiquani's Sanctum.",
         "Kill Zicoatl, Warden of the core and loot the large soul core",
-        "Go back to the infested barrens waypoint",
+        "Go back to Infested Barrens waypoint",
       ],
       hasWaypoint: false,
     },
     {
       title: "In Infested Barrens",
       steps: [
-        "Insert the large soul core and go to Matlan Waterways afterwards",
+        "Insert the large soul core and go to The Matlan Waterways afterwards",
       ],
       hasWaypoint: false,
     },
     {
-      title: "In Matlan Waterways",
+      title: "In The Matlan Waterways",
       steps: [
         "Activate every single lever to navigate through the zone, then activate the big one at the end",
         "Tp back to town",
@@ -1464,7 +877,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Town",
       steps: [
-        "Go down the stairs near the well / the hooded one",
+        "Go down the stairs near the well / The Hooded One",
         "Talk to Alva, enter The Drowned City",
       ],
       hasWaypoint: false,
@@ -1479,20 +892,20 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     },
     {
       title: "In The Apex of Filth",
-      steps: ["Find and kill the queen of filth, then portal back to town"],
+      steps: ["Find and kill The Queen of Filth, then portal back to town"],
       hasWaypoint: false,
     },
     {
       title: "In Town",
       steps: [
-        "Go down the stairs near the well / the hooded one again, and enter The Temple of Kopec",
+        "Go down the stairs near the well / The Hooded One again, and enter The Temple of Kopec",
       ],
       hasWaypoint: false,
     },
     {
       title: "In The Temple of Kopec",
       steps: [
-        "Go up the stairs twice, then kill Ketzuli, High Priest of The Sun",
+        "Go up the stairs twice, then kill Ketzuli, High Priest of the Sun",
       ],
       hasWaypoint: false,
     },
@@ -1515,9 +928,9 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Aggorat",
       steps: [
-        "Follow the voices of the trial of Atziri, go through to find the next checkpoint",
-        "Find the entrance towards the Black Chambers",
-        "Find the Sacrificial table",
+        "Follow the voices of the Trial of Atziri, go through to find the next checkpoint",
+        "Find the entrance towards The Black Chambers",
+        "Find the sacrificial table",
         "Farm The Sacrificial Heart if you haven't found it yet.",
         "Use the checkpoint to go the sacrificial table, loot the dagger, place the heart, stab the heart",
         "Use the checkpoint to go to The Black Chambers, enter The Black Chambers",
@@ -1527,7 +940,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In The Black Chambers",
       steps: [
-        "Find and defeat Doryiani, Royal Thaumaturge",
+        "Find and defeat Doryani, Royal Thaumaturge",
         "Port back to town, talk to Doryiana to finish the campaign!",
       ],
       hasWaypoint: false,
