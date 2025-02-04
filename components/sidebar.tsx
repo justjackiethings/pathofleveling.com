@@ -2,9 +2,8 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
 
-export function Sidebar({ className }: { className?: string }) {
+export function Sidebar() {
   const acts = ["1", "2", "3", "1 Cruel", "2 Cruel", "3 Cruel"];
 
   return (

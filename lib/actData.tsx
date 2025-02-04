@@ -1,5 +1,3 @@
-import { ComponentType, FC, ReactElement } from "react";
-
 export class LocationSteps {
   title: string;
   steps: React.JSX.Element[];

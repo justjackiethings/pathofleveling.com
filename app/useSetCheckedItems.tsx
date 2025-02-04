@@ -7,5 +7,5 @@ export function useSetCheckedItems(setCheckedItems: { (value: SetStateAction<Rec
     if (savedCheckedItems) {
       setCheckedItems(JSON.parse(savedCheckedItems));
     }
-  }, []);
+  }, [setCheckedItems]);
 }
