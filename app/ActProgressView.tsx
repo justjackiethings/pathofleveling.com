@@ -1,6 +1,5 @@
 "use client";
-import { acts, actToAlmostLocationSteps } from "@/lib/actData";
-import { ActStepView } from "./ActStepView";
+import { actToAlmostLocationSteps } from "@/lib/actData";
 import { HighlightedText } from "@/lib/outlinks";
 
 export const ActProgressView = (props: {
