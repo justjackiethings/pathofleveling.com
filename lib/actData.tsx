@@ -33,7 +33,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Kill Beira of the Rotten Pack. She's North/North East of the waypoint. Rewards 10% Cold Res.",
         "Find the entrance to The Grelwood.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Grelwood",
@@ -42,7 +42,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to The Grim Tangle, take the waypoint, and go back to The Grelwood.",
         "Find the entrance to The Red Vale and go through.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Red Vale",
@@ -59,14 +59,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Stab the tree with your runed spikes then talk to Una.",
         "Go back to town, talk to NPCs, then head to The Grim Tangle via waypoint to The Grelwood.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Grim Tangle",
       steps: [
         "Find the entrance to the Cemetery of The Eternals. The Druid boss can be skipped.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Cemetary of The Eternals",
@@ -76,7 +76,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Talk to Lachlann, open the gate, and kill him. ☹",
         "Enter Hunting Grounds",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Hunting Grounds",
@@ -84,7 +84,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill The Crowbell. Rewards two skill points.",
         "Find and enter Ogham Farmlands.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Ogham Farmlands",
@@ -93,12 +93,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Vargir The Feral Mutt in the Crop Circle. Drops a level 4 skill gem.",
         "Find and take the entrance to Ogham Village and WP back to the Hunting Grounds.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Hunting Grounds",
       steps: ["Find and enter Freythorn."],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Freythorn",
@@ -106,7 +106,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Do all 4 rituals, killing The King in the Mists at the end. Rewards 30 spirit.",
         "TP back to town and waypoint to Ogham Village.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Ogham Village",
@@ -115,14 +115,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill The Executioner",
         "Go to The Manor Ramparts",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Manor Ramparts",
       steps: [
         "Find the entrance to to Ogham Manor. This is always in the opposite direction of the waypoint after you zone in.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Ogham Manor",
@@ -131,7 +131,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and go down stairs twice",
         "Find elevator to boss, kill boss, go back to town",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -149,7 +149,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Rathbreaker",
         "Portal back to camp, enter The Ardura Caravan",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -161,12 +161,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Mawdun Quarry",
       steps: ["Find and take the entrance to Mawdun Mine"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Mawdun Mine",
       steps: ["Find and kill Rudja, the Dread Engineer", "Talk to Risu then portal back to town"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -183,7 +183,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Basala, pick up the Djinn Barya quest item",
         "Find the entrance to The Halani Gates",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Halani Gates",
@@ -191,7 +191,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Jamanra, the Risen King. Stay close to the canyon. Cross the canyon 3 times to find the boss.",
         "Go down the stairs and to the bottom right of the zone, then back to town",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -208,7 +208,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Kill snakes until you find the Kabala Clan relic.",
         "Find and enter The Lost City",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Lost City",
@@ -218,7 +218,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Talk to Halani, the Water Goddess, loot the cinders, burn the goddess, loot the essence of water.",
         "Head back to town.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -228,7 +228,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Mastodon Badlands",
       steps: ["Find the Entrance to The Bone Pits"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Bone Pits",
@@ -237,7 +237,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Kill Hyenas until you found the sun clan relic",
         "TP back to town.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -251,12 +251,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the medallion and place the two relics in there. Rewards a permanent buff.",
         "Find and take the entrance to The Titan Grotto",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Titan Grotto",
       steps: ["Find and kill the boss, then go back to town"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -275,12 +275,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to the path of mourning",
         "Go the The Path of Mourning",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Path of Mourning",
       steps: ["Find the entrance to The Spires of Deshar"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Spires of Deshar",
@@ -289,7 +289,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Tor Gul, the Defiler",
         "Portal back to town",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -305,7 +305,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to The Dreadnought vanguard, then find and kill Jamanra, the Abomination",
         "Portal back to town",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -320,7 +320,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Sandswept Marsh",
       steps: ["Find the entrance to the Ziggurat Encampment (town)."],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -334,7 +334,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Mighty Silverfist",
         "Find and go through the entrance to Infested Barrens",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Infested Barrens",
@@ -349,7 +349,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Jungle Ruins",
       steps: ["Enter The Venom Crypts"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Venom Crypts",
@@ -371,7 +371,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Ignagduk, the Bog Witch. Rewards 30 spirit.",
         "Go back to town and then to The Chimeral Wetlands",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Chimeral Wetlands",
@@ -380,7 +380,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Xyclucian, the Chimera",
         "Enter Jiquani's Machinarium",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Jiquani's Machinarium",
@@ -391,7 +391,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Blackjaw, the Remnant. Rewards 10% fire res.",
         "Checkpoint port to the entrance, then go to Jiquani's Sanctum",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Jiquani's Sanctum",
@@ -404,14 +404,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Kill Zicoatl, Warden of the Core and loot the large soul core",
         "Go back to Infested Barrens waypoint",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Infested Barrens",
       steps: [
         "Insert the large soul core and go to The Matlan Waterways afterwards",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Matlan Waterways",
@@ -436,7 +436,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to The Apex of Filth. Enter zone, take waypoint, and if it's your first character of the league; backtrack to The Drowned City.",
         "If it's your first character of the league; Enter the Molten Vault. Otherwise enter The Apex of Filth.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Molten Vault",
@@ -444,12 +444,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill the boss, then talk to Oswald back in town",
         "Enter The Apex of Filth",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Apex of Filth",
       steps: ["Find and kill The Queen of Filth, then portal back to town"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -479,7 +479,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Search and kill Viper Napuatzi.",
         "Find the entrance to Aggorat and enter Aggorat.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Aggorat",
@@ -491,7 +491,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Use the checkpoint to go the sacrificial table, loot the dagger, place the heart, stab the heart",
         "Use the checkpoint to go to The Black Chambers",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Black Chambers",
@@ -499,7 +499,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and defeat Doryani, Royal Thaumaturge",
         "Port back to town, walk through the gateway to enter Act 1 Cruel",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
   ],
   "1 Cruel": [
@@ -517,7 +517,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Kill Beira of the Rotten Pack. She's North/North East of the waypoint. Rewards 10% Cold Res.",
         "Find the entrance to The Grelwood.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Grelwood",
@@ -526,7 +526,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to The Grim Tangle, take the waypoint, and go back to The Grelwood.",
         "Find the entrance to The Red Vale and go through.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Red Vale",
@@ -543,14 +543,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Stab the tree with your runed spikes then talk to Una.",
         "Go back to town, talk to NPCs, then head to The Grim Tangle via waypoint to The Grelwood.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Grim Tangle",
       steps: [
         "Find the entrance to Cemetery of the Eternals. The Druid boss can be skipped.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Cemetary of The Eternals",
@@ -560,7 +560,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Talk to Lachlann, open the gate, and kill him. ☹",
         "Enter Hunting Grounds",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Hunting Grounds",
@@ -568,7 +568,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill The Crowbell. Rewards two skill points.",
         "Find and enter Ogham Farmlands.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Ogham Farmlands",
@@ -576,19 +576,19 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find Una's lute. Usually around the center of the zone. Rewards 2 skill points.",
         "Find and take the entrance to Ogham Village.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Ogham Village",
       steps: ["Find and kill The Executioner", "Go to The Manor Ramparts"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Manor Ramparts",
       steps: [
         "Find the entrance to Ogham Manor. This is always in the opposite direction of the waypoint after you zone in.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Ogham Manor",
@@ -597,12 +597,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and go down stairs twice",
         "Find elevator to boss, kill boss, go back to town",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
       steps: ["Talk to The Hooded One to go to act 2"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
   ],
   "2 Cruel": [
@@ -612,7 +612,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Rathbreaker",
         "Portal back to camp, enter caravan",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -624,12 +624,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Mawdun Quarry",
       steps: ["Find and take the entrance to Mawdun Mine"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Mawdun Mine",
       steps: ["Find and kill Rudja, the Dread Engineer", "Talk to Risu then portal back to town"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -643,7 +643,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Traitor's Passage",
       steps: ["Find the entrance to The Halani Gates"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Halani Gates",
@@ -651,7 +651,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Jamanra, the Risen King. Stay close to the canyon. Cross the canyon 3 times to find the boss.",
         "Go down the stairs and to the bottom right of the zone, then back to town",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -665,7 +665,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Kill snakes until you find the Kabala Clan relic.",
         "Find and enter The Lost City.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Lost City",
@@ -675,7 +675,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Talk to Halani, the Water Goddess, loot the cinders, burn the goddess, loot the essence of water.",
         "Head back to town.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -685,7 +685,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Mastodon Badlands",
       steps: ["Find the entrance to The Bone Pits"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Bone Pits",
@@ -694,7 +694,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Kill hyenas until you found the sun clan relic",
         "Tp back to town.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -708,12 +708,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the medallion and place the two relics in there. Rewards a permanent buff.",
         "Find and take the entrance to The Titan Grotto",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Titan Grotto",
       steps: ["Find and kill the boss, then go back to town"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -732,12 +732,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to the path of mourning",
         "Go the The Path of Mourning",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Path of Mourning",
       steps: ["Find the entrance to the Spires of Deshar"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Spires of Deshar",
@@ -746,7 +746,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Tor Gul, the Defiler",
         "Portal back to town",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -762,7 +762,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to the Dreadnought Vanguard, then find and kill Jamanra, the Abomination",
         "Portal back to town",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -777,7 +777,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In Sandswept Marsh",
       steps: ["Find the entrance to the Ziggurat Encampment (town)."],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -791,7 +791,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Mighty Silverfist",
         "Find and go through the entrance to Infested Barrens",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Infested Barrens",
@@ -801,12 +801,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to The Matlan Waterways and the waypoint.",
         "Zone Note: Whichever waypoint you find last, use it to travel back to Jungle Ruins.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Jungle Ruins",
       steps: ["Enter The Venom Crypts"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Venom Crypts",
@@ -828,12 +828,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Ignagduk. Rewards 30 spirit.",
         "Go back to town and then to The Chimeral Wetlands",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Chimeral Wetlands",
       steps: ["Find and kill Xyclucian, the Chimera", "Enter Jiquani's Machinarium"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Jiquani's Machinarium",
@@ -844,7 +844,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and kill Blackjaw. Rewards 10% fire res.",
         "Checkpoint port to the entrance, then go to Jiquani's Sanctum",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Jiquani's Sanctum",
@@ -857,14 +857,14 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Kill Zicoatl, Warden of the core and loot the large soul core",
         "Go back to Infested Barrens waypoint",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Infested Barrens",
       steps: [
         "Insert the large soul core and go to The Matlan Waterways afterwards",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Matlan Waterways",
@@ -888,12 +888,12 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find the entrance to The Apex of Filth. Enter zone, take waypoint, and if it's your first character of the league; backtrack to The Drowned City.",
         "Enter The Apex of Filth.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Apex of Filth",
       steps: ["Find and kill The Queen of Filth, then portal back to town"],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Town",
@@ -923,7 +923,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Search and kill Viper Napuatzi.",
         "Find the entrance to Aggorat and enter Aggorat.",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In Aggorat",
@@ -935,7 +935,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Use the checkpoint to go the sacrificial table, loot the dagger, place the heart, stab the heart",
         "Use the checkpoint to go to The Black Chambers, enter The Black Chambers",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
     {
       title: "In The Black Chambers",
@@ -943,7 +943,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
         "Find and defeat Doryani, Royal Thaumaturge",
         "Port back to town, talk to Doryiana to finish the campaign!",
       ],
-      hasWaypoint: false,
+      hasWaypoint: true,
     },
   ],
 };

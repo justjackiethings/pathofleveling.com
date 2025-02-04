@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <div className="border-t h-screen flex">
+    <div className="border-t h-screen flex" key={"home"}>
       <div className="flex">
         <Sidebar />
         <div className="px-4 lg:pl-64">
