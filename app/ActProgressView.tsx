@@ -13,19 +13,19 @@ export const ActProgressView = (props: {
           --== ACT {act} ==--
         </h2>
         <div className="text-muted-foreground pb-12" key={act + i}>
-          {almost.map((locationSteps, stepI) => (
-            <div  key={locationSteps.title + stepI}>
+          {almost.map((locationSteps, locationI) => (
+            <div  key={locationSteps.title + locationI}>
               <div className="text-xl p-2 pt-4">{locationSteps.title}</div>
               <div>
-                {locationSteps.steps.map((step) => (
+                {locationSteps.steps.map((step, stepI) => (
                   <div className="flex flex-row gap-2" key={step}>
                     <input
                       type="checkbox"
                       checked={
-                        props.checkedItems[locationSteps.title + stepI] || false
+                        props.checkedItems[locationSteps.title + locationI + stepI] || false
                       }
                       onChange={() =>
-                        props.handleCheckboxChange(locationSteps.title + stepI)
+                        props.handleCheckboxChange(locationSteps.title + locationI + stepI)
                       }
                     />
                     <HighlightedText key={step} text={step} />
