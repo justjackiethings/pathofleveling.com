@@ -17,7 +17,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
   "1": [
     {
       title: "In The Riverbank",
-      steps: ["Kill The Bloated Miller then enter town"],
+      steps: ["Talk to the wounded man, equip the weapon and walk down the path til you come across a large chest. Open it and equip the skill gem. Proceed down the path, killing as you go. Kill The Bloated Miller then enter town"],
       hasWaypoint: false,
     },
     {
@@ -36,7 +36,7 @@ export const actToAlmostLocationSteps: Record<string, Array<{
     {
       title: "In The Grelwood",
       steps: [
-        "Find the waypoint and talk to the quest NPC. Usually central.",
+        "Find the waypoint and talk to the quest NPC, Una. Usually central.",
         "Find the entrance to The Grim Tangle, take the waypoint, and go back to The Grelwood.",
         "Find the entrance to The Red Vale and go through.",
       ],
