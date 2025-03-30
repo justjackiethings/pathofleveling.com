@@ -1,3 +1,3 @@
-Source code for https://www.pathofleveling.com/
+this is more meant for my own personal use and idk how to make it private yet. I may or may not share it when I'm done.
 
-Could not be done without the contribution of members of PoE2: Campaign Codex subreddit.
+Thanks to PathofLeveling.com. Could not be done without the contribution of members of PoE2: Campaign Codex subreddit.
